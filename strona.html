@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazwa Firmy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        main {
+            display: flex;
+            width: 100%;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        main img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        main .description {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        footer {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Firmy">
+        <h1>Nazwa Firmy</h1>
+    </header>
+
+    <main>
+        <img src="zdjecie.jpg" alt="Opis Zdjęcia">
+        <div class="description">
+            <h2>Nazwa Produktu</h2>
+            <p>Opis produktu lorem ipsum...</p>
+        </div>
+    </main>
+    <main>
+        <img src="zdjecie.jpg" alt="Opis Zdjęcia">
+        <div class="description">
+            <h2>Nazwa Produktu</h2>
+            <p>Opis produktu lorem ipsum...</p>
+        </div>
+    </main>
+    <main>
+        <img src="zdjecie.jpg" alt="Opis Zdjęcia">
+        <div class="description">
+            <h2>Nazwa Produktu</h2>
+            <p>Opis produktu lorem ipsum...</p>
+        </div>
+    </main>
+
+    <footer>
+        Stopka strony © 2024 Nazwa Firmy
+    </footer>
+</body>
+</html>
