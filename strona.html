@@ -1,40 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nazwa Firmy</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f8f8f8;
-        }
-
-        header {
-            width: 100%;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        header img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 10px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        }
-
-        h1 {
-            margin: 0;
+@ -37,34 +37,87 @@
             font-size: 1.5em;
+        }
+
+        contact-info {
+            width: 100%;
+            background-color: #ddd;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
         }
 
         main {
@@ -50,37 +23,102 @@
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
+        .gallery {
+            width: 200px;
+            overflow: hidden;
         }
 
         main .description {
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
             flex-grow: 1;
             padding: 20px;
+            margin-left: 20px; /* Dodatkowy margines między galerią a opisem */
         }
 
         h2 {
             margin-top: 0;
             font-size: 1.2em;
+            font-size: 1.5em;
             color: #333;
+        }
+
+        .description,
+        #additional-options {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
         p {
             color: #555;
+            margin: 10px 0;
+        }
+
+        nav {
+            width: 200px;
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+            overflow-y: auto;
+            max-height: 400px;
+        }
+
+        nav a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #ccc;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
         }
 
         footer {
-            width: 100%;
-            padding: 20px;
-            background-color: #333;
+@ -74,39 +127,66 @@
             color: #fff;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+		 .price {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+    <contact-info>
+        <p>Roman Sławuta</p>
+        <p>Adres</p>
+		<p>63-714 Świnków</p>
+		<p>ul.Szkolna 3</p>
+        <p>Nr. Tel: 887-068-062</p>
+    </contact-info>
+
     <header>
         <img src="logo.png" alt="Logo Firmy">
         <h1>Nazwa Firmy</h1>
+        <h1>R.S Labor-Meble</h1>
     </header>
 
     <main>
@@ -95,6 +133,10 @@
         <div class="description">
             <h2>Nazwa Produktu</h2>
             <p>Opis produktu lorem ipsum...</p>
+        <div class="gallery">
+            <img src="zdjecie.jpg" alt="Zdjęcie 1">
+            <img src="zdjecie2.jpg" alt="Zdjęcie 2">
+			<img src="zdjecie3.jpg" alt="Zdjęcie 2">
         </div>
     </main>
     <main>
@@ -102,11 +144,39 @@
         <div class="description">
             <h2>Nazwa Produktu</h2>
             <p>Opis produktu lorem ipsum...</p>
+        <div class="content">
+            <h2>Biurko - stół protetyczny</h2>
+            <div class="description" id="main-description">
+                <h2>Opis produktu</h2>
+                <p>Oferta dotyczy biurka dwustanowiskowego</p>
+                <p>Blat: Lity Buk</p>
+                <p>Stelaż: Aluminium</p>
+                <p>Szafki: Płyta laminowana kolor do wyboru</p>
+                <p>Szuflady: Z cichym domykiem</p>
+                <p>Wkład stalowy do szuflad nad kolanami</p>
+                <p>Instalacja elektryczna</p>
+                <p>Dmuchawki sprężonego powietrza</p>
+                <p>Wymiary (szer-głę-wys.): 150 x 60 x 87/90 reg.</p>
+            </div>
+
+            <div id="additional-options">
+                <h2>Opcje dodatkowe</h2>
+                <p>Kobyłki</p>
+                <p>Podłokietniki</p>
+                <p>Instalacja gazowa</p>
+                <p>Lampy</p>
+                <p>Odciągi pyłu</p>
+            </div>
+			  <div id="price">
+                <h2>Cena</h2>
+                <p class="price">4400,00 zł</p>
+            </div>
         </div>
     </main>
 
     <footer>
         Stopka strony © 2024 Nazwa Firmy
+         © 2024 R.S Labor-Meble
     </footer>
 </body>
 </html>
