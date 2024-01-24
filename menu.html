@@ -1,4 +1,39 @@
-@ -37,34 +37,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazwa Firmy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0;
             font-size: 1.5em;
         }
 
@@ -15,20 +50,14 @@
             width: 100%;
             margin: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
             border-radius: 8px;
         }
 
-        main img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
         .gallery {
             width: 200px;
             overflow: hidden;
         }
 
-        main .description {
         .gallery img {
             width: 100%;
             height: auto;
@@ -40,13 +69,11 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1;
-            padding: 20px;
             margin-left: 20px; /* Dodatkowy margines między galerią a opisem */
         }
 
         h2 {
             margin-top: 0;
-            font-size: 1.2em;
             font-size: 1.5em;
             color: #333;
         }
@@ -94,7 +121,9 @@
         }
 
         footer {
-@ -74,39 +127,66 @@
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
             color: #fff;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -117,33 +146,15 @@
 
     <header>
         <img src="logo.png" alt="Logo Firmy">
-        <h1>Nazwa Firmy</h1>
         <h1>R.S Labor-Meble</h1>
     </header>
 
     <main>
-        <img src="zdjecie.jpg" alt="Opis Zdjęcia">
-        <div class="description">
-            <h2>Nazwa Produktu</h2>
-            <p>Opis produktu lorem ipsum...</p>
-        </div>
-    </main>
-    <main>
-        <img src="zdjecie.jpg" alt="Opis Zdjęcia">
-        <div class="description">
-            <h2>Nazwa Produktu</h2>
-            <p>Opis produktu lorem ipsum...</p>
         <div class="gallery">
             <img src="zdjecie.jpg" alt="Zdjęcie 1">
             <img src="zdjecie2.jpg" alt="Zdjęcie 2">
 			<img src="zdjecie3.jpg" alt="Zdjęcie 2">
         </div>
-    </main>
-    <main>
-        <img src="zdjecie.jpg" alt="Opis Zdjęcia">
-        <div class="description">
-            <h2>Nazwa Produktu</h2>
-            <p>Opis produktu lorem ipsum...</p>
         <div class="content">
             <h2>Biurko - stół protetyczny</h2>
             <div class="description" id="main-description">
@@ -175,7 +186,6 @@
     </main>
 
     <footer>
-        Stopka strony © 2024 Nazwa Firmy
          © 2024 R.S Labor-Meble
     </footer>
 </body>
