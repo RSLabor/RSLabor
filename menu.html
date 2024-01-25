@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R.S Labor-Meble</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: url('tlo.jpg') center/cover fixed; /* Tło strony */
-        }
-
-        header {
+         body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('tlo.jpg') center/cover fixed; /* Tło strony */
+}
+header {
             width: 100%;
             padding: 20px;
             background-color: #333;
@@ -42,73 +40,74 @@
             font-size: 1.5em;
         }
 
-        nav {
-            width: 100%;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            background: rgba(255, 255, 255, 0.8); /* Tło dla odnośników */
-        }
+nav {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.8); /* Tło dla odnośników */
+}
 
-        nav a {
-            flex-basis: calc(50% - 20px);
-            margin: 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 20px;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-sizing: border-box;
-            text-align: center;
-            font-size: 1.2em;
-            position: relative;
-        }
+nav a {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2em;
+    position: relative;
+}
 
-        nav a::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.5); /* Przezroczyste tło */
-            border-radius: 8px;
-        }
+nav a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Przezroczyste tło */
+    border-radius: 8px;
+}
 
-        nav a:hover {
-            background-color: #555;
-            color: #fff;
-            transform: scale(1.05);
-        }
+nav a:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scale(1.05);
+}
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px;
-        }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
 
-        .gallery img {
-            width: 70%;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+.gallery img {
+    width: 100%; /* Zmiana szerokości obrazów na 100% dla responsywności */
+    max-width: 400px; /* Dodatkowy limit szerokości obrazów */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        footer {
-            width: 100%;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: auto;
-        }
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
     </style>
 </head>
 <body>
