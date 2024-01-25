@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nazwa Firmy</title>
+    <title>R.S Labor-Meble</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,7 +12,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #f8f8f8;
+            background: url('tlo.jpg') center/cover fixed; /* Tło strony */
         }
 
         header {
@@ -22,6 +22,7 @@
             color: #fff;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         header img {
@@ -30,94 +31,73 @@
             border-radius: 50%;
             margin-right: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         h1 {
-            margin: 0;
+            margin: 3cm 0 0; /* Przesunięcie o 3 cm w dół */
             font-size: 1.5em;
-        }
-
-        contact-info {
-            width: 100%;
-            background-color: #ddd;
-            text-align: center;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-
-        main {
-            display: flex;
-            width: 100%;
-            margin: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .gallery {
-            width: 200px;
-            overflow: hidden;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            margin-left: 20px; /* Dodatkowy margines między galerią a opisem */
-        }
-
-        h2 {
-            margin-top: 0;
-            font-size: 1.5em;
-            color: #333;
-        }
-
-        .description,
-        #additional-options {
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            color: #555;
-            margin: 10px 0;
         }
 
         nav {
-            width: 200px;
-            background-color: #ddd;
+            width: 100%;
             padding: 10px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-right: 20px;
-            overflow-y: auto;
-            max-height: 400px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: rgba(255, 255, 255, 0.8); /* Tło dla odnośników */
         }
 
         nav a {
-            display: block;
-            margin-bottom: 10px;
+            flex-basis: calc(50% - 20px);
+            margin: 10px;
             text-decoration: none;
             color: #333;
             font-weight: bold;
-            padding: 10px;
-            background-color: #ccc;
+            padding: 20px;
             border-radius: 8px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.5); /* Przezroczyste tło */
+            border-radius: 8px;
         }
 
         nav a:hover {
             background-color: #555;
             color: #fff;
+            transform: scale(1.05);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .gallery img {
+            width: 70%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         footer {
@@ -127,66 +107,36 @@
             color: #fff;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-		 .price {
-            font-size: 1.2em;
-            color: #333;
-            font-weight: bold;
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
-    <contact-info>
-        <p>Roman Sławuta</p>
-        <p>Adres</p>
-		<p>63-714 Świnków</p>
-		<p>ul.Szkolna 3</p>
-        <p>Nr. Tel: 887-068-062</p>
-    </contact-info>
-
     <header>
         <img src="logo.png" alt="Logo Firmy">
-        <h1>R.S Labor-Meble</h1>
+        <h1>R.S Labor Meble</h1>
     </header>
 
-    <main>
-        <div class="gallery">
-            <img src="zdjecie.jpg" alt="Zdjęcie 1">
-            <img src="zdjecie2.jpg" alt="Zdjęcie 2">
-			<img src="zdjecie3.jpg" alt="Zdjęcie 2">
-        </div>
-        <div class="content">
-            <h2>Biurko - stół protetyczny</h2>
-            <div class="description" id="main-description">
-                <h2>Opis produktu</h2>
-                <p>Oferta dotyczy biurka dwustanowiskowego</p>
-                <p>Blat: Lity Buk</p>
-                <p>Stelaż: Aluminium</p>
-                <p>Szafki: Płyta laminowana kolor do wyboru</p>
-                <p>Szuflady: Z cichym domykiem</p>
-                <p>Wkład stalowy do szuflad nad kolanami</p>
-                <p>Instalacja elektryczna</p>
-                <p>Dmuchawki sprężonego powietrza</p>
-                <p>Wymiary (szer-głę-wys.): 150 x 60 x 87/90 reg.</p>
-            </div>
+    <nav>
+        <a href="#">Meble protetyczne</a>
+        <a href="#">Meble do gabinetów stomatologicznych</a>
+        <a href="#">Urządzenia protetyczne</a>
+        <a href="#">Komis mebli i urządzeń</a>
+        <a href="#">O nas</a>
+        <a href="#">Kontakt</a>
+    </nav>
 
-            <div id="additional-options">
-                <h2>Opcje dodatkowe</h2>
-                <p>Kobyłki</p>
-                <p>Podłokietniki</p>
-                <p>Instalacja gazowa</p>
-                <p>Lampy</p>
-                <p>Odciągi pyłu</p>
-            </div>
-			  <div id="price">
-                <h2>Cena</h2>
-                <p class="price">4400,00 zł</p>
-            </div>
-        </div>
-    </main>
+    <div class="gallery">
+        <img src="zdjecie1.jpg" alt="Zdjęcie 1">
+        <img src="zdjecie2.jpg" alt="Zdjęcie 2">
+        <img src="zdjecie3.jpg" alt="Zdjęcie 3">
+        <img src="zdjecie4.jpg" alt="Zdjęcie 4">
+        <img src="zdjecie5.jpg" alt="Zdjęcie 5">
+        <img src="zdjecie6.jpg" alt="Zdjęcie 6">
+    </div>
 
     <footer>
-         © 2024 R.S Labor-Meble
+        © 2024 R.S Labor Meble
     </footer>
 </body>
 </html>
