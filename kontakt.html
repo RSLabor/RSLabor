@@ -13,6 +13,7 @@
             flex-direction: column;
             align-items: center;
             background: url('tlo.jpg') center/cover fixed; /* Tło strony */
+            min-height: 100vh; /* Pełna wysokość widoku */
         }
 
         header {
@@ -49,6 +50,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 20px;
             text-align: center;
+            flex-grow: 1; /* Rozszerzenie sekcji, aby wypełnić dostępną przestrzeń */
         }
 
         .contact-info p {
@@ -84,7 +86,7 @@
             color: #fff;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: auto;
+            margin-top: 20px; /* Dodanie marginesu nad stopką */
         }
     </style>
 </head>
