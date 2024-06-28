@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komis mebli i urządzeń</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url('tlo.jpg') center/cover fixed; /* Tło strony */
+            min-height: 100vh; /* Pełna wysokość widoku */
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            margin: 3cm 0 0; /* Przesunięcie o 3 cm w dół */
+            font-size: 1.5em;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.8); /* Tło dla sekcji treści */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            text-align: center;
+        }
+
+        .content p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .back-link a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: auto; /* Umożliwia przesunięcie stopki na dół */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Firmy">
+        <h1>Komis mebli i urządzeń</h1>
+    </header>
+
+    <div class="content">
+        <p>Opis komisu mebli i urządzeń, ceny, wymiary, materiały z których wykonane.</p>
+        <div class="gallery">
+            <img src="zdjecie1.jpg" alt="Zdjęcie 1">
+            <img src="zdjecie2.jpg" alt="Zdjęcie 2">
+            <img src="zdjecie3.jpg" alt="Zdjęcie 3">
+        </div>
+    </div>
+
+    <div class="back-link">
+        <a href="menu.html">Powrót do strony głównej</a>
+    </div>
+
+    <footer>
+        © 2024 R.S Labor Meble
+    </footer>
+</body>
+</html>
