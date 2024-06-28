@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meble do gabinetów stomatologicznych</title>
+    <title>Meble Protetyczne - R.S. Labor-Meble</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,8 +12,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: url('tlo.jpg') center/cover fixed; /* Tło strony */
-            min-height: 100vh; /* Pełna wysokość widoku */
+            background-color: #f4f4f4;
         }
 
         header {
@@ -23,53 +22,48 @@
             color: #fff;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-
-        header img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 10px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
 
         h1 {
-            margin: 3cm 0 0; /* Przesunięcie o 3 cm w dół */
-            font-size: 1.5em;
+            margin: 0;
+            font-size: 2em;
         }
 
         .content {
-            background: rgba(255, 255, 255, 0.8); /* Tło dla sekcji treści */
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px;
+            background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            text-align: center;
         }
 
-        .content p {
-            margin: 10px 0;
-            font-size: 1.2em;
-            color: #333;
-        }
-
-        .gallery {
+        .product {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px 0;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
 
-        .gallery img {
+        .product img {
             width: 30%;
             margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .product-details h2 {
+            margin-top: 0;
+        }
+
+        .product-details p {
+            margin: 10px 0;
         }
 
         .back-link {
@@ -98,17 +92,29 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: auto; /* Umożliwia przesunięcie stopki na dół */
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo Firmy">
-        <h1>Meble do gabinetów stomatologicznych</h1>
+        <h1>Meble Protetyczne</h1>
     </header>
-    
+
+    <div class="content">
+        <div class="product">
+            <img src="zdjecie1.jpg" alt="Mebel Protetyczny 1">
+            <img src="zdjecie2.jpg" alt="Mebel Protetyczny 1">
+            <img src="zdjecie3.jpg" alt="Mebel Protetyczny 1">
+            <div class="product-details">
+                <h2>Mebel Protetyczny 1</h2>
+                <p><strong>Opis:</strong> Nowoczesny mebel protetyczny zaprojektowany z myślą o ergonomii i funkcjonalności. Idealny do laboratoriów protetycznych.</p>
+                <p><strong>Cena:</strong> 3000 PLN</p>
+                <p><strong>Wymiary:</strong> 120 cm x 60 cm x 75 cm</p>
+                <p><strong>Materiał:</strong> Stal nierdzewna, MDF, szkło hartowane</p>
+            </div>
+        </div>
+
         <div class="product">
             <img src="mebel2_1.jpg" alt="Mebel Protetyczny 2">
             <img src="mebel2_2.jpg" alt="Mebel Protetyczny 2">
