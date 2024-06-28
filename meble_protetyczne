@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meble Protetyczne - R.S. Labor-Meble</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .product-details h2 {
+            margin-top: 0;
+        }
+
+        .product-details p {
+            margin: 10px 0;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .back-link a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meble Protetyczne</h1>
+    </header>
+
+    <div class="content">
+        <div class="product">
+            <img src="mebel1_1.jpg" alt="Mebel Protetyczny 1">
+            <img src="mebel1_2.jpg" alt="Mebel Protetyczny 1">
+            <img src="mebel1_3.jpg" alt="Mebel Protetyczny 1">
+            <div class="product-details">
+                <h2>Mebel Protetyczny 1</h2>
+                <p><strong>Opis:</strong> Nowoczesny mebel protetyczny zaprojektowany z myślą o ergonomii i funkcjonalności. Idealny do laboratoriów protetycznych.</p>
+                <p><strong>Cena:</strong> 3000 PLN</p>
+                <p><strong>Wymiary:</strong> 120 cm x 60 cm x 75 cm</p>
+                <p><strong>Materiał:</strong> Stal nierdzewna, MDF, szkło hartowane</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="mebel2_1.jpg" alt="Mebel Protetyczny 2">
+            <img src="mebel2_2.jpg" alt="Mebel Protetyczny 2">
+            <img src="mebel2_3.jpg" alt="Mebel Protetyczny 2">
+            <div class="product-details">
+                <h2>Mebel Protetyczny 2</h2>
+                <p><strong>Opis:</strong> Stylowy mebel protetyczny, który łączy nowoczesny design z wysoką funkcjonalnością. Doskonały wybór dla profesjonalnych laboratoriów.</p>
+                <p><strong>Cena:</strong> 4500 PLN</p>
+                <p><strong>Wymiary:</strong> 140 cm x 70 cm x 80 cm</p>
+                <p><strong>Materiał:</strong> Aluminium, płyta laminowana, szkło hartowane</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="mebel3_1.jpg" alt="Mebel Protetyczny 3">
+            <img src="mebel3_2.jpg" alt="Mebel Protetyczny 3">
+            <img src="mebel3_3.jpg" alt="Mebel Protetyczny 3">
+            <div class="product-details">
+                <h2>Mebel Protetyczny 3</h2>
+                <p><strong>Opis:</strong> Kompaktowy mebel protetyczny, idealny do małych przestrzeni. Wyposażony w liczne schowki i powierzchnie robocze.</p>
+                <p><strong>Cena:</strong> 2500 PLN</p>
+                <p><strong>Wymiary:</strong> 100 cm x 50 cm x 70 cm</p>
+                <p><strong>Materiał:</strong> Stal nierdzewna, drewno, szkło hartowane</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-link">
+        <a href="index.html">Powrót do strony głównej</a>
+    </div>
+
+    <footer>
+        © 2024 R.S Labor Meble
+    </footer>
+</body>
+</html>
