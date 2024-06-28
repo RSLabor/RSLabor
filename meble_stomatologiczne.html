@@ -93,6 +93,31 @@
             color: #fff;
             text-align: center;
             margin-top: auto;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            color: #ccc;
         }
     </style>
 </head>
@@ -147,7 +172,16 @@
     </div>
 
     <footer>
-        © 2024 R.S Labor Meble
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+            <div>
+                © 2024 R.S Labor Meble
+            </div>
+        </div>
     </footer>
 </body>
 </html>
