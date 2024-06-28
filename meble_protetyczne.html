@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meble Protetyczne - R.S. Labor-Meble</title>
+    <title>Meble Stomatologiczne - R.S. Labor-Meble</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +13,7 @@
             flex-direction: column;
             align-items: center;
             background-color: #f4f4f4;
-            min-height: 100vh; /* Zapewnia, że body zajmie co najmniej całą wysokość widoku */
+            min-height: 100vh; /* Minimalna wysokość widoku */
         }
 
         header {
@@ -34,30 +34,32 @@
             width: 80%;
             max-width: 1200px;
             margin: 20px;
-            background-color: #fff;
+            background-color: transparent; /* Przeźroczyste tło dla zawartości */
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            flex: 1; /* Elastyczny kontener zawartości */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .product {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            width: 100%;
+            background-color: #fff; /* Tło dla pojedynczego produktu */
             margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden; /* Zapobiega wyjściu zawartości poza ramy */
         }
 
         .product img {
             width: 30%;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px 0 0 8px;
         }
 
         .product-details {
             flex: 1;
-            margin-left: 20px;
+            padding: 20px;
         }
 
         .product-details h2 {
@@ -100,46 +102,40 @@
 </head>
 <body>
     <header>
-        <h1>Meble Protetyczne</h1>
+        <h1>Meble Stomatologiczne</h1>
     </header>
 
     <div class="content">
         <div class="product">
-            <img src="zdjecie1.jpg" alt="Mebel Protetyczny 1">
-            <img src="zdjecie2.jpg" alt="Mebel Protetyczny 1">
-            <img src="zdjecie3.jpg" alt="Mebel Protetyczny 1">
+            <img src="zdjecie1.jpg" alt="Mebel Stomatologiczny 1">
             <div class="product-details">
-                <h2>Mebel Protetyczny 1</h2>
-                <p><strong>Opis:</strong> Nowoczesny mebel protetyczny zaprojektowany z myślą o ergonomii i funkcjonalności. Idealny do laboratoriów protetycznych.</p>
-                <p><strong>Cena:</strong> 3000 PLN</p>
-                <p><strong>Wymiary:</strong> 120 cm x 60 cm x 75 cm</p>
-                <p><strong>Materiał:</strong> Stal nierdzewna, MDF, szkło hartowane</p>
+                <h2>Mebel Stomatologiczny 1</h2>
+                <p><strong>Opis:</strong> Nowoczesny mebel stomatologiczny zaprojektowany z myślą o komforcie pacjenta i efektywności pracy stomatologa.</p>
+                <p><strong>Cena:</strong> 3500 PLN</p>
+                <p><strong>Wymiary:</strong> 130 cm x 70 cm x 80 cm</p>
+                <p><strong>Materiał:</strong> Aluminium, skóra ekologiczna, stal nierdzewna</p>
             </div>
         </div>
 
         <div class="product">
-            <img src="mebel2_1.jpg" alt="Mebel Protetyczny 2">
-            <img src="mebel2_2.jpg" alt="Mebel Protetyczny 2">
-            <img src="mebel2_3.jpg" alt="Mebel Protetyczny 2">
+            <img src="mebel2_1.jpg" alt="Mebel Stomatologiczny 2">
             <div class="product-details">
-                <h2>Mebel Protetyczny 2</h2>
-                <p><strong>Opis:</strong> Stylowy mebel protetyczny, który łączy nowoczesny design z wysoką funkcjonalnością. Doskonały wybór dla profesjonalnych laboratoriów.</p>
-                <p><strong>Cena:</strong> 4500 PLN</p>
-                <p><strong>Wymiary:</strong> 140 cm x 70 cm x 80 cm</p>
-                <p><strong>Materiał:</strong> Aluminium, płyta laminowana, szkło hartowane</p>
+                <h2>Mebel Stomatologiczny 2</h2>
+                <p><strong>Opis:</strong> Elegancki i funkcjonalny mebel stomatologiczny, doskonale sprawdzający się w nowoczesnych gabinetach dentystycznych.</p>
+                <p><strong>Cena:</strong> 4800 PLN</p>
+                <p><strong>Wymiary:</strong> 150 cm x 75 cm x 85 cm</p>
+                <p><strong>Materiał:</strong> Drewno dębowe, skóra naturalna, stal nierdzewna</p>
             </div>
         </div>
 
         <div class="product">
-            <img src="mebel3_1.jpg" alt="Mebel Protetyczny 3">
-            <img src="mebel3_2.jpg" alt="Mebel Protetyczny 3">
-            <img src="mebel3_3.jpg" alt="Mebel Protetyczny 3">
+            <img src="mebel3_1.jpg" alt="Mebel Stomatologiczny 3">
             <div class="product-details">
-                <h2>Mebel Protetyczny 3</h2>
-                <p><strong>Opis:</strong> Kompaktowy mebel protetyczny, idealny do małych przestrzeni. Wyposażony w liczne schowki i powierzchnie robocze.</p>
-                <p><strong>Cena:</strong> 2500 PLN</p>
-                <p><strong>Wymiary:</strong> 100 cm x 50 cm x 70 cm</p>
-                <p><strong>Materiał:</strong> Stal nierdzewna, drewno, szkło hartowane</p>
+                <h2>Mebel Stomatologiczny 3</h2>
+                <p><strong>Opis:</strong> Innowacyjny mebel stomatologiczny, zastosowanie najnowszych technologii w projektowaniu wygodnych i ergonomicznych rozwiązań.</p>
+                <p><strong>Cena:</strong> 3900 PLN</p>
+                <p><strong>Wymiary:</strong> 140 cm x 65 cm x 75 cm</p>
+                <p><strong>Materiał:</strong> Aluminium, skóra ekologiczna, szkło hartowane</p>
             </div>
         </div>
     </div>
