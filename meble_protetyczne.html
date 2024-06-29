@@ -15,7 +15,6 @@
             background: url('tlo_lista.jpg') center/cover fixed;
             min-height: 100vh;
         }
-
         header {
             width: 100%;
             padding: 20px;
@@ -24,19 +23,16 @@
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
         h1 {
             margin: 0;
             font-size: 2em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-
         .content {
             width: 80%;
             max-width: 1200px;
             margin: 20px;
         }
-
         .product-container {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
@@ -44,42 +40,34 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
-
         .product {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: flex-start; /* Ustawienie startowego wyrównania dla elementów */
+            align-items: center;
         }
-
         .product img {
-            width: 100%; /* Zdjęcie zajmuje 100% szerokości kontenera */
+            width: 30%;
             height: auto;
             margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
         .product-details {
             flex: 1;
-            margin-top: 20px; /* Margines na górze opisu */
-            text-align: left; /* Wyrównanie tekstu do lewej strony */
+            margin-left: 20px;
         }
-
         .product-details h2 {
             margin-top: 0;
         }
-
         .product-details p {
             margin: 10px 0;
         }
-
         .back-link {
             text-align: center;
             margin-top: 40px;
             margin-bottom: 20px;
         }
-
         .back-link a {
             text-decoration: none;
             color: #333;
@@ -89,12 +77,10 @@
             border-radius: 8px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-
         .back-link a:hover {
             background-color: #333;
             color: #fff;
         }
-
         footer {
             width: 100%;
             padding: 20px;
@@ -103,69 +89,27 @@
             text-align: center;
             margin-top: auto;
         }
-
         .footer-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         .footer-social {
             display: flex;
             gap: 10px;
         }
-
         .footer-social a {
             color: #fff;
             text-decoration: none;
             font-size: 1.5em;
             transition: color 0.3s ease;
         }
-
         .footer-social a:hover {
             color: #ccc;
         }
-
         .footer-text {
             flex: 1;
             text-align: center;
-        }
-
-        /* Media Queries dla responsywności */
-
-        /* Dla urządzeń o szerokości maksymalnie 767px */
-        @media (max-width: 767px) {
-            .product {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .product img {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .product-details {
-                margin-left: 0;
-                margin-top: 20px;
-            }
-
-            .back-link {
-                margin-top: 20px;
-                margin-bottom: 10px;
-            }
-        }
-
-        /* Dla urządzeń o szerokości od 768px */
-        @media (min-width: 768px) {
-            .product img {
-                width: 40%;
-                max-width: 400px;
-            }
-
-            .product-details {
-                margin-left: 40px;
-            }
         }
     </style>
 </head>
@@ -173,7 +117,6 @@
     <header>
         <h1>Meble Protetyczne</h1>
     </header>
-
     <div class="content">
         <div class="product-container">
             <div class="product">
@@ -188,7 +131,6 @@
                 </div>
             </div>
         </div>
-
         <div class="product-container">
             <div class="product">
                 <img src="protetyczne2_1.jpg" alt="Mebel Protetyczny 2">
@@ -201,7 +143,6 @@
                 </div>
             </div>
         </div>
-
         <div class="product-container">
             <div class="product">
                 <img src="protetyczne3_1.jpg" alt="Mebel Protetyczny 3">
@@ -215,7 +156,6 @@
                 </div>
             </div>
         </div>
-
         <div class="product-container">
             <div class="product">
                 <img src="protetyczne4_1.jpg" alt="Mebel Protetyczny 3">
@@ -229,7 +169,6 @@
                 </div>
             </div>
         </div>
-
         <div class="product-container">
             <div class="product">
                 <img src="protetyczne5_1.jpg" alt="Mebel Protetyczny 3">
@@ -299,11 +238,9 @@
             </div>
         </div>
     </div>
-
     <div class="back-link">
         <a href="index.html">Powrót do strony głównej</a>
     </div>
-
     <footer>
         <div class="footer-content">
             <div class="footer-social">
