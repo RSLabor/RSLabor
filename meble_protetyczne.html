@@ -6,161 +6,166 @@
     <title>Meble Protetyczne - R.S. Labor-Meble</title>
     <style>
         body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url('tlo_lista.jpg') center/cover fixed;
-    min-height: 100vh;
-}
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url('tlo_lista.jpg') center/cover fixed;
+            min-height: 100vh;
+        }
 
-header {
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-h1 {
-    margin: 0;
-    font-size: 2em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
 
-.content {
-    width: 90%; /* Zwiększenie szerokości na większych ekranach */
-    max-width: 1200px;
-    margin: 20px;
-}
+        .content {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px;
+        }
 
-.product-container {
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
+        .product-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
 
-.product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.product img {
-    width: 50%; /* Zwiększenie szerokości obrazków */
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        .product img {
+            width: 30%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-.product-details {
-    flex: 1;
-    margin-left: 20px;
-}
+        .product-details {
+            flex: 1;
+            margin-left: 20px;
+        }
 
-.back-link {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
+        .product-details h2 {
+            margin-top: 0;
+        }
 
-.back-link a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: 2px solid #333;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+        .product-details p {
+            margin: 10px 0;
+        }
 
-.back-link a:hover {
-    background-color: #333;
-    color: #fff;
-}
+        .back-link {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
 
-footer {
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    text-align: center;
-    margin-top: auto;
-}
+        .back-link a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .back-link a:hover {
+            background-color: #333;
+            color: #fff;
+        }
 
-.footer-social {
-    display: flex;
-    gap: 10px;
-}
+        footer {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            margin-top: auto;
+        }
 
-.footer-social a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    transition: color 0.3s ease;
-}
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.footer-social a:hover {
-    color: #ccc;
-}
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
 
-.footer-text {
-    flex: 1;
-    text-align: center;
-}
+        .footer-social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
 
-/* Media Queries dla responsywności */
+        .footer-social a:hover {
+            color: #ccc;
+        }
 
-/* Dla urządzeń o szerokości maksymalnie 767px */
-@media (max-width: 767px) {
-    .product {
-        flex-direction: column;
-        text-align: center;
-    }
+        .footer-text {
+            flex: 1;
+            text-align: center;
+        }
 
-    .product img {
-        width: 100%;
-        max-width: 300px;
-    }
+        /* Media Queries dla responsywności */
 
-    .product-details {
-        margin-left: 0;
-        margin-top: 20px;
-    }
+        /* Dla urządzeń o szerokości maksymalnie 767px */
+        @media (max-width: 767px) {
+            .product {
+                flex-direction: column;
+                text-align: center;
+            }
 
-    .back-link {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-}
+            .product img {
+                width: 100%;
+                max-width: 300px;
+            }
 
-/* Dla urządzeń o szerokości od 768px */
-@media (min-width: 768px) {
-    .product img {
-        width: 40%;
-        max-width: 400px;
-    }
+            .product-details {
+                margin-left: 0;
+                margin-top: 20px;
+            }
 
-    .product-details {
-        margin-left: 40px;
-    }
+            .back-link {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        }
 
-    .product-container {
-        margin-bottom: 40px; /* Zwiększenie marginesu między produktami */
-    }
-}
+        /* Dla urządzeń o szerokości od 768px */
+        @media (min-width: 768px) {
+            .product img {
+                width: 40%;
+                max-width: 400px;
+            }
+
+            .product-details {
+                margin-left: 40px;
+            }
+        }
     </style>
 </head>
 <body>
