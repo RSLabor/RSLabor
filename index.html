@@ -92,7 +92,9 @@
             margin: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 80%; /* Dostosuj szerokość zdjęcia głównego */
+            width: 50%; /* Szerokość zdjęcia głównego */
+            max-width: 400px; /* Maksymalna szerokość zdjęcia */
+            transition: opacity 0.5s ease; /* Efekt przejścia */
         }
 
         footer {
@@ -170,7 +172,11 @@
 
         function changeImage() {
             currentIndex = (currentIndex + 1) % imageList.length;
-            mainImage.src = imageList[currentIndex];
+            mainImage.style.opacity = 0; // Efekt znikania
+            setTimeout(() => {
+                mainImage.src = imageList[currentIndex];
+                mainImage.style.opacity = 1; // Efekt pojawiania się
+            }, 500); // Czas oczekiwania przed zmianą obrazka (w milisekundach)
         }
 
         setInterval(changeImage, 3000); // zmień czas przewijania na dowolną wartość w milisekundach (np. co 3 sekundy)
