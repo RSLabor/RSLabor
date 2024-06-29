@@ -89,17 +89,17 @@
         }
 
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
         }
 
         .gallery img {
-            width: calc(33.33% - 20px); /* 33.33% szerokości, minus marginesy */
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.5s ease;
         }
 
         footer {
@@ -176,6 +176,8 @@
         <img src="zdjecie6.jpg" alt="Zdjęcie 6">
     </div>
 
+    <script src="gallery.js"></script>
+    
     <footer>
         © 2024 R.S Labor Meble
     </footer>
