@@ -88,25 +88,11 @@
             transform: scale(1.05);
         }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .main-image {
             margin: 20px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .gallery img {
-            width: calc(33.33% - 20px); /* 33.33% szerokości, minus marginesy */
-            margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.5s ease;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translateX(100%); /* Startowe przesunięcie */
+            width: 80%; /* Dostosuj szerokość zdjęcia głównego */
         }
 
         footer {
@@ -142,8 +128,8 @@
                 flex-basis: calc(100% - 20px);
             }
 
-            .gallery img {
-                width: calc(50% - 20px);
+            .main-image {
+                width: 90%; /* Dostosuj szerokość zdjęcia głównego */
             }
         }
 
@@ -151,10 +137,6 @@
         @media (min-width: 768px) {
             nav a {
                 flex-basis: calc(33.33% - 20px);
-            }
-
-            .gallery img {
-                width: calc(25% - 20px);
             }
         }
     </style>
@@ -174,32 +156,24 @@
         <a href="kontakt.html">Kontakt</a>
     </nav>
 
-    <div class="gallery">
-        <img src="zdjecie1.jpg" alt="Zdjęcie 1">
-        <img src="zdjecie2.jpg" alt="Zdjęcie 2">
-        <img src="zdjecie3.jpg" alt="Zdjęcie 3">
-        <img src="zdjecie4.jpg" alt="Zdjęcie 4">
-        <img src="zdjecie5.jpg" alt="Zdjęcie 5">
-        <img src="zdjecie6.jpg" alt="Zdjęcie 6">
-    </div>
+    <img src="zdjecie1.jpg" alt="Zdjęcie główne" class="main-image">
 
     <footer>
         © 2024 R.S Labor Meble
     </footer>
 
     <script>
-        const gallery = document.querySelector('.gallery');
-        const images = document.querySelectorAll('.gallery img');
-
+        // Skrypt JavaScript do przewijania zdjęć głównych
+        const mainImage = document.querySelector('.main-image');
+        const imageList = ['zdjecie1.jpg', 'zdjecie2.jpg', 'zdjecie3.jpg', 'zdjecie4.jpg', 'zdjecie5.jpg', 'zdjecie6.jpg'];
         let currentIndex = 0;
-        const totalImages = images.length;
 
-        function scrollImages() {
-            images[currentIndex].style.transform = 'translateX(-100%)';
-            currentIndex = (currentIndex + 1) % totalImages;
-            images[currentIndex].style.transform = 'translateX(0)';
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % imageList.length;
+            mainImage.src = imageList[currentIndex];
         }
 
-        setInterval(scrollImages, 3000); // przewijaj co 3 sekundy
+        setInterval(changeImage, 3000); // zmień czas przewijania na dowolną wartość w milisekundach (np. co 3 sekundy)
     </script>
 </body>
+</html>
