@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,17 +89,24 @@
         }
 
         .gallery {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
         }
 
         .gallery img {
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    transition: transform 0.5s ease;
+            width: calc(33.33% - 20px); /* 33.33% szerokości, minus marginesy */
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(100%); /* Startowe przesunięcie */
         }
 
         footer {
@@ -176,10 +183,23 @@
         <img src="zdjecie6.jpg" alt="Zdjęcie 6">
     </div>
 
-    <script src="gallery.js"></script>
-    
     <footer>
         © 2024 R.S Labor Meble
     </footer>
+
+    <script>
+        const gallery = document.querySelector('.gallery');
+        const images = document.querySelectorAll('.gallery img');
+
+        let currentIndex = 0;
+        const totalImages = images.length;
+
+        function scrollImages() {
+            images[currentIndex].style.transform = 'translateX(-100%)';
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].style.transform = 'translateX(0)';
+        }
+
+        setInterval(scrollImages, 3000); // przewijaj co 3 sekundy
+    </script>
 </body>
-</html>
