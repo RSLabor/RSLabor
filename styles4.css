@@ -1,13 +1,17 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
 
 header {
-    background-color: #333; /* Czarny kolor tła nagłówka */
+    background-color: #333;
     color: white;
     padding: 15px 20px;
     display: flex;
@@ -56,6 +60,7 @@ nav a:hover {
 }
 
 main {
+    flex: 1;
     padding: 20px;
 }
 
@@ -74,7 +79,7 @@ main {
 .furniture-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 20px; /* Space between grid items */
 }
 
 .furniture-item {
@@ -82,15 +87,21 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin-bottom: 20px; /* Add space between rows */
 }
 
 .furniture-img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    margin-bottom: 15px; /* Space between image and description */
 }
 
 .furniture-img:hover {
@@ -99,7 +110,7 @@ main {
 
 .furniture-item h3 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .furniture-item p {
@@ -112,11 +123,6 @@ main {
     font-weight: bold;
 }
 
-.furniture-item .description {
-    text-align: left;
-}
-
-/* Modal */
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
@@ -125,8 +131,8 @@ main {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
     padding-top: 60px;
 }
 
@@ -136,31 +142,42 @@ main {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 1000px; /* Ensure the modal doesn't get too wide */
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Space between images */
-    justify-content: center; /* Center align images */
+    gap: 10px;
 }
 
 .modal-content img {
-    flex: 1 1 calc(33.333% - 20px); /* 3 images per row with space in between */
-    max-width: calc(33.333% - 20px); /* Prevent images from overflowing */
-    height: auto; /* Maintain aspect ratio */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-/* Placeholder style */
-.modal-content .placeholder {
-    flex: 1 1 calc(33.333% - 20px); /* 3 placeholders per row with space in between */
-    max-width: calc(33.333% - 20px); /* Prevent placeholders from overflowing */
-    height: auto; /* Maintain aspect ratio */
-    background-color: #e0e0e0; /* Light gray background for placeholders */
-    border-radius: 8px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 14px;
+.modal-content img {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative;
 }
