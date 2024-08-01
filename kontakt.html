@@ -1,112 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: url('tlo.jpg') center/cover fixed; /* Tło strony */
-            min-height: 100vh; /* Pełna wysokość widoku */
-        }
-
-        header {
-            width: 100%;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-
-        header img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 10px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        h1 {
-            margin: 3cm 0 0; /* Przesunięcie o 3 cm w dół */
-            font-size: 1.5em;
-        }
-
-        .contact-info {
-            background: rgba(255, 255, 255, 0.8); /* Tło dla sekcji kontaktowej */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            text-align: center;
-        }
-
-        .contact-info p {
-            margin: 10px 0;
-            font-size: 1.2em;
-            color: #333;
-        }
-
-        .back-link {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .back-link a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 10px 20px;
-            border: 2px solid #333;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .back-link a:hover {
-            background-color: #333;
-            color: #fff;
-        }
-
-        footer {
-            width: 100%;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: auto; /* Umożliwia przesunięcie stopki na dół */
-        }
-    </style>
+    <title>Kontakt - Nazwa Firmy</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo Firmy">
-        <h1>R.S Labor Meble</h1>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Firmy" class="logo">
+            <h1>Nazwa Firmy</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">O nas</a></li>
+               
+            </ul>
+        </nav>
     </header>
-
-    <div class="contact-info">
-        <p>Roman Sławuta</p>
-        <p>Adres: 63-714 Świnków, ul. Szkolna 3</p>
-        <p>Nr. Telefonu: 887-068-062</p>
-    </div>
-
-    <div class="back-link">
-        <a href="index.html">Powrót do strony głównej</a>
-    </div>
-
+    <main>
+        <section class="contact">
+            <h2>Skontaktuj się z nami</h2>
+            <div class="contact-info">
+                <p><strong>Imię i nazwisko:</strong> Roman Sławuta</p>
+                <p><strong>Adres:</strong> 63-714 Świnków, ul. Szkolna 3</p>
+                <p><strong>Nr. Telefonu:</strong> 887-068-062</p>
+            </div>
+        </section>
+    </main>
     <footer>
-        © 2024 R.S Labor Meble
+        <p>&copy; 2024 Nazwa Firmy. Wszelkie prawa zastrzeżone.</p>
     </footer>
 </body>
 </html>
