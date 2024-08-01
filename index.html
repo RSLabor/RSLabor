@@ -70,44 +70,59 @@
             align-items: center;
         }
 
-        .main-image {
-            width: 100%;
-            max-width: 800px;
+        .about-us {
+            background-color: #fff;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: opacity 0.5s ease;
             margin-bottom: 20px;
+            text-align: center;
+            max-width: 800px;
         }
 
-        .contact-form {
+        .testimonials {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            margin-top: 0;
+        }
+
+        .testimonial {
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .counter {
+            display: flex;
+            justify-content: space-around;
             width: 100%;
-            max-width: 600px;
+            max-width: 800px;
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .counter div {
+            text-align: center;
         }
 
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #004080;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+        .counter div h3 {
+            margin: 0;
+            font-size: 2em;
+            color: #004080;
         }
 
-        .contact-form button:hover {
-            background-color: #00509e;
+        .counter div p {
+            margin: 5px 0 0;
         }
 
         footer {
@@ -136,6 +151,14 @@
             nav a {
                 margin: 5px;
             }
+
+            .counter {
+                flex-direction: column;
+            }
+
+            .counter div {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -157,18 +180,36 @@
     </nav>
 
     <div class="main-content">
-        <img src="zdjecie1.jpg" alt="Zdjęcie główne" class="main-image">
+        <div class="about-us">
+            <h2>O nas</h2>
+            <p>R.S. Labor Meble to firma specjalizująca się w projektowaniu i produkcji wysokiej jakości mebli protetycznych i stomatologicznych. Nasze produkty charakteryzują się nowoczesnym designem, funkcjonalnością i trwałością.</p>
+        </div>
 
-        <div class="contact-form">
-            <form action="contact.php" method="post">
-                <label for="name">Imię i nazwisko:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Wiadomość:</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea><br>
-                <button type="submit">Wyślij</button>
-            </form>
+        <div class="testimonials">
+            <h2>Referencje klientów</h2>
+            <div class="testimonial">
+                <p>"R.S. Labor Meble zapewniło nam najlepsze meble do naszego gabinetu. Jesteśmy bardzo zadowoleni z jakości i obsługi!"</p>
+                <p>- Dr Jan Kowalski</p>
+            </div>
+            <div class="testimonial">
+                <p>"Profesjonalne podejście do klienta i doskonałe wykonanie. Polecamy każdemu!"</p>
+                <p>- Protetyka Dental</p>
+            </div>
+        </div>
+
+        <div class="counter">
+            <div>
+                <h3 id="projects-count">0</h3>
+                <p>Zrealizowanych projektów</p>
+            </div>
+            <div>
+                <h3 id="clients-count">0</h3>
+                <p>Zadowolonych klientów</p>
+            </div>
+            <div>
+                <h3 id="years-count">0</h3>
+                <p>Lat doświadczenia</p>
+            </div>
         </div>
     </div>
 
@@ -177,21 +218,26 @@
     </footer>
 
     <script>
-        // Skrypt JavaScript do przewijania zdjęć głównych
-        const mainImage = document.querySelector('.main-image');
-        const imageList = ['zdjecie1.jpg', 'zdjecie2.jpg', 'zdjecie3.jpg', 'zdjecie4.jpg', 'zdjecie5.jpg', 'zdjecie6.jpg'];
-        let currentIndex = 0;
-
-        function changeImage() {
-            currentIndex = (currentIndex + 1) % imageList.length;
-            mainImage.style.opacity = 0; // Efekt znikania
-            setTimeout(() => {
-                mainImage.src = imageList[currentIndex];
-                mainImage.style.opacity = 1; // Efekt pojawiania się
-            }, 500); // Czas oczekiwania przed zmianą obrazka (w milisekundach)
+        // Skrypt JavaScript do dynamicznego licznika
+        function animateCounter(id, start, end, duration) {
+            const obj = document.getElementById(id);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerText = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
         }
 
-        setInterval(changeImage, 5000); // zmień czas przewijania na dowolną wartość w milisekundach (np. co 5 sekund)
+        document.addEventListener("DOMContentLoaded", () => {
+            animateCounter("projects-count", 0, 150, 2000);
+            animateCounter("clients-count", 0, 300, 2000);
+            animateCounter("years-count", 0, 25, 2000);
+        });
     </script>
 </body>
 </html>
