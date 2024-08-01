@@ -145,18 +145,17 @@ main {
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px; /* Space between images */
+    justify-content: center; /* Center images horizontally */
 }
 
 .modal-content img {
-    width: 100%;
+    width: calc(33.333% - 10px); /* Adjust width to account for gap */
     height: auto;
     border-radius: 8px;
-}
-
-.modal-content img {
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add a subtle shadow around images */
+    margin-bottom: 10px; /* Space below each image */
+    object-fit: cover; /* Ensure images cover their container */
 }
 
 .close {
