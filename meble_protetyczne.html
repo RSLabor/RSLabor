@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meble Protetyczne - R.S. Labor meble</title>
-    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -24,13 +24,36 @@
         <section class="furniture">
             <h2>Nasza Oferta Mebli Protetycznych</h2>
             <div class="furniture-grid">
+                <!-- Product Item 1 -->
                 <div class="furniture-item">
                     <img src="protetyczne1.jpg" alt="Mebel 1" class="furniture-img" onclick="openModal('modal1')">
                     <h3>Biurko ENS-pro jednostanowiskowe</h3>
-                    <p><strong>Opis:</strong> Wyposażenie obejmuje instalację elektryczną z trzema gniazdami pod blatem oraz instalację powietrzną z dmuchawką. Zestaw zawiera także matę roboczą oraz prowadnice szuflad z funkcją cichego dotyku, a całość jest wykonana z konstrukcji aluminiowej. Opcje dodatkowe to możliwość instalacji gazowej, dodanie kobyłki (dwukrotnie), lampy oraz wyciągu pyłu. Istnieje również opcja zmiany koloru.</p>
-                    <p><strong>Cena netto:</strong> 4400 PLN</p>
-                    <p><strong>Wielkość:</strong> 150x60x89 cm</p>
+                    <div class="furniture-details">
+                        <div class="furniture-description">
+                            <p><strong>Opis:</strong></p>
+                            <p>Wyposażenie obejmuje instalację elektryczną z trzema gniazdami pod blatem oraz instalację powietrzną z dmuchawką.</p>
+                            <p><span class="bold-label">Zestaw zawiera także:</span></p>
+                            <ul>
+                                <li>Matę roboczą</li>
+                                <li>Prowadnice szuflad z funkcją cichego dotyku</li>
+                                <li>Konstrukcję aluminiową</li>
+                            </ul>
+                            <p><span class="bold-label">Opcje dodatkowe:</span></p>
+                            <ul>
+                                <li>Instalacja gazowa</li>
+                                <li>Dodanie kobyłki (dwukrotnie)</li>
+                                <li>Lampa</li>
+                                <li>Wyciąg pyłu</li>
+                            </ul>
+                            <p><span class="bold-label">Istnieje również opcja zmiany koloru.</span></p>
+                        </div>
+                        <div class="furniture-specs">
+                            <p><strong>Cena netto:</strong> 4400 PLN</p>
+                            <p><strong>Wielkość:</strong> 150x60x89 cm</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Modal for Product 1 -->
                 <div id="modal1" class="modal">
                     <span class="close" onclick="closeModal('modal1')">&times;</span>
                     <div class="modal-content">
@@ -39,118 +62,88 @@
                         <img src="protetyczne2_2.jpg" alt="Mebel 1 - Zdjęcie 3">
                     </div>
                 </div>
-
-                <div class="furniture-item">
-                    <img src="photo1.jpg" alt="Mebel 2" class="furniture-img" onclick="openModal('modal2')">
-                    <h3>Mebel Protetyczny 2</h3>
-                    <p><strong>Opis:</strong> Nowoczesny mebel protetyczny, który łączy funkcjonalność z estetyką.</p>
-                    <p><strong>Cena netto:</strong> 1500 PLN</p>
-                    <p><strong>Wielkość:</strong> 100x50x70 cm</p>
+                 <div class="furniture-item">
+                    <img src="furniture9.jpg" alt="Mebel 9" class="furniture-img" onclick="openModal('modal9')">
+                    <h3>Mebel Protetyczny 9</h3>
+                    <p><strong>Opis:</strong> Nowoczesny mebel protetyczny o eleganckim wykończeniu, idealny do każdego biura.</p>
+                    <p><strong>Cena netto:</strong> 2000 PLN</p>
+                    <p><strong>Wielkość:</strong> 120x60x80 cm</p>
                 </div>
-                <div id="modal2" class="modal">
-                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <div id="modal9" class="modal">
+                    <span class="close" onclick="closeModal('modal9')">&times;</span>
                     <div class="modal-content">
-                        <img src="photo1.jpg" alt="Mebel 2 - Zdjęcie 1">
-                        <img src="photo1.jpg" alt="Mebel 2 - Zdjęcie 2">
-                        <img src="photo1.jpg" alt="Mebel 2 - Zdjęcie 3">
+                        <img src="furniture9-large1.jpg" alt="Mebel 9 - Zdjęcie 1">
+                        <img src="furniture9-large2.jpg" alt="Mebel 9 - Zdjęcie 2">
+                        <img src="furniture9-large3.jpg" alt="Mebel 9 - Zdjęcie 3">
                     </div>
                 </div>
 
                 <div class="furniture-item">
-                    <img src="photo1.jpg" alt="Mebel 3" class="furniture-img" onclick="openModal('modal3')">
-                    <h3>Mebel Protetyczny 3</h3>
-                    <p><strong>Opis:</strong> Ergonomiczny mebel protetyczny zaprojektowany z myślą o komforcie.</p>
-                    <p><strong>Cena netto:</strong> 2500 PLN</p>
-                    <p><strong>Wielkość:</strong> 130x65x80 cm</p>
-                </div>
-                <div id="modal3" class="modal">
-                    <span class="close" onclick="closeModal('modal3')">&times;</span>
-                    <div class="modal-content">
-                        <img src="photo1.jpg" alt="Mebel 3 - Zdjęcie 1">
-                        <img src="photo1.jpg" alt="Mebel 3 - Zdjęcie 2">
-                        <img src="photo1.jpg" alt="Mebel 3 - Zdjęcie 3">
-                    </div>
-                </div>
-
-                <div class="furniture-item">
-                    <img src="furniture4.jpg" alt="Mebel 4" class="furniture-img" onclick="openModal('modal4')">
-                    <h3>Mebel Protetyczny 4</h3>
-                    <p><strong>Opis:</strong> Wytrzymały mebel protetyczny stworzony z wysokiej jakości materiałów.</p>
-                    <p><strong>Cena netto:</strong> 1800 PLN</p>
-                    <p><strong>Wielkość:</strong> 110x55x75 cm</p>
-                </div>
-                <div id="modal4" class="modal">
-                    <span class="close" onclick="closeModal('modal4')">&times;</span>
-                    <div class="modal-content">
-                        <img src="furniture4-large1.jpg" alt="Mebel 4 - Zdjęcie 1">
-                        <img src="furniture4-large2.jpg" alt="Mebel 4 - Zdjęcie 2">
-                        <img src="furniture4-large3.jpg" alt="Mebel 4 - Zdjęcie 3">
-                    </div>
-                </div>
-
-                <div class="furniture-item">
-                    <img src="furniture5.jpg" alt="Mebel 5" class="furniture-img" onclick="openModal('modal5')">
-                    <h3>Mebel Protetyczny 5</h3>
-                    <p><strong>Opis:</strong> Innowacyjny mebel protetyczny, zapewniający komfort i funkcjonalność.</p>
-                    <p><strong>Cena netto:</strong> 2200 PLN</p>
-                    <p><strong>Wielkość:</strong> 125x60x80 cm</p>
-                </div>
-                <div id="modal5" class="modal">
-                    <span class="close" onclick="closeModal('modal5')">&times;</span>
-                    <div class="modal-content">
-                        <img src="furniture5-large1.jpg" alt="Mebel 5 - Zdjęcie 1">
-                        <img src="furniture5-large2.jpg" alt="Mebel 5 - Zdjęcie 2">
-                        <img src="furniture5-large3.jpg" alt="Mebel 5 - Zdjęcie 3">
-                    </div>
-                </div>
-
-                <div class="furniture-item">
-                    <img src="furniture6.jpg" alt="Mebel 6" class="furniture-img" onclick="openModal('modal6')">
-                    <h3>Mebel Protetyczny 6</h3>
-                    <p><strong>Opis:</strong> Stylowy mebel protetyczny z nowoczesnym designem.</p>
-                    <p><strong>Cena netto:</strong> 2400 PLN</p>
+                    <img src="furniture10.jpg" alt="Mebel 10" class="furniture-img" onclick="openModal('modal10')">
+                    <h3>Mebel Protetyczny 10</h3>
+                    <p><strong>Opis:</strong> Funkcjonalny mebel protetyczny z możliwością rozbudowy i personalizacji.</p>
+                    <p><strong>Cena netto:</strong> 2300 PLN</p>
                     <p><strong>Wielkość:</strong> 140x70x85 cm</p>
                 </div>
-                <div id="modal6" class="modal">
-                    <span class="close" onclick="closeModal('modal6')">&times;</span>
+                <div id="modal10" class="modal">
+                    <span class="close" onclick="closeModal('modal10')">&times;</span>
                     <div class="modal-content">
-                        <img src="furniture6-large1.jpg" alt="Mebel 6 - Zdjęcie 1">
-                        <img src="furniture6-large2.jpg" alt="Mebel 6 - Zdjęcie 2">
-                        <img src="furniture6-large3.jpg" alt="Mebel 6 - Zdjęcie 3">
+                        <img src="furniture10-large1.jpg" alt="Mebel 10 - Zdjęcie 1">
+                        <img src="furniture10-large2.jpg" alt="Mebel 10 - Zdjęcie 2">
+                        <img src="furniture10-large3.jpg" alt="Mebel 10 - Zdjęcie 3">
                     </div>
                 </div>
 
                 <div class="furniture-item">
-                    <img src="furniture7.jpg" alt="Mebel 7" class="furniture-img" onclick="openModal('modal7')">
-                    <h3>Mebel Protetyczny 7</h3>
-                    <p><strong>Opis:</strong> Ekskluzywny mebel protetyczny z eleganckimi wykończeniami.</p>
-                    <p><strong>Cena netto:</strong> 2600 PLN</p>
+                    <img src="furniture11.jpg" alt="Mebel 11" class="furniture-img" onclick="openModal('modal11')">
+                    <h3>Mebel Protetyczny 11</h3>
+                    <p><strong>Opis:</strong> Ergonomiczny mebel z innowacyjnymi funkcjami i nowoczesnym designem.</p>
+                    <p><strong>Cena netto:</strong> 2700 PLN</p>
                     <p><strong>Wielkość:</strong> 150x75x90 cm</p>
                 </div>
-                <div id="modal7" class="modal">
-                    <span class="close" onclick="closeModal('modal7')">&times;</span>
+                <div id="modal11" class="modal">
+                    <span class="close" onclick="closeModal('modal11')">&times;</span>
                     <div class="modal-content">
-                        <img src="furniture7-large1.jpg" alt="Mebel 7 - Zdjęcie 1">
-                        <img src="furniture7-large2.jpg" alt="Mebel 7 - Zdjęcie 2">
-                        <img src="furniture7-large3.jpg" alt="Mebel 7 - Zdjęcie 3">
+                        <img src="furniture11-large1.jpg" alt="Mebel 11 - Zdjęcie 1">
+                        <img src="furniture11-large2.jpg" alt="Mebel 11 - Zdjęcie 2">
+                        <img src="furniture11-large3.jpg" alt="Mebel 11 - Zdjęcie 3">
                     </div>
                 </div>
 
                 <div class="furniture-item">
-                    <img src="furniture8.jpg" alt="Mebel 8" class="furniture-img" onclick="openModal('modal8')">
-                    <h3>Mebel Protetyczny 8</h3>
-                    <p><strong>Opis:</strong> Funkcjonalny mebel protetyczny z zaawansowanymi opcjami regulacji.</p>
-                    <p><strong>Cena netto:</strong> 2300 PLN</p>
-                    <p><strong>Wielkość:</strong> 135x65x80 cm</p>
+                    <img src="furniture12.jpg" alt="Mebel 12" class="furniture-img" onclick="openModal('modal12')">
+                    <h3>Mebel Protetyczny 12</h3>
+                    <p><strong>Opis:</strong> Ekskluzywny mebel z zaawansowanymi opcjami regulacji i wysokiej jakości materiałami.</p>
+                    <p><strong>Cena netto:</strong> 3000 PLN</p>
+                    <p><strong>Wielkość:</strong> 160x80x90 cm</p>
                 </div>
-                <div id="modal8" class="modal">
-                    <span class="close" onclick="closeModal('modal8')">&times;</span>
+                <div id="modal12" class="modal">
+                    <span class="close" onclick="closeModal('modal12')">&times;</span>
                     <div class="modal-content">
-                        <img src="furniture8-large1.jpg" alt="Mebel 8 - Zdjęcie 1">
-                        <img src="furniture8-large2.jpg" alt="Mebel 8 - Zdjęcie 2">
-                        <img src="furniture8-large3.jpg" alt="Mebel 8 - Zdjęcie 3">
+                        <img src="furniture12-large1.jpg" alt="Mebel 12 - Zdjęcie 1">
+                        <img src="furniture12-large2.jpg" alt="Mebel 12 - Zdjęcie 2">
+                        <img src="furniture12-large3.jpg" alt="Mebel 12 - Zdjęcie 3">
                     </div>
                 </div>
+
+                <div class="furniture-item">
+                    <img src="furniture13.jpg" alt="Mebel 13" class="furniture-img" onclick="openModal('modal13')">
+                    <h3>Mebel Protetyczny 13</h3>
+                    <p><strong>Opis:</strong> Stylowy mebel protetyczny z nowoczesnym wzornictwem i wygodą użytkowania.</p>
+                    <p><strong>Cena netto:</strong> 2800 PLN</p>
+                    <p><strong>Wielkość:</strong> 150x70x85 cm</p>
+                </div>
+                <div id="modal13" class="modal">
+                    <span class="close" onclick="closeModal('modal13')">&times;</span>
+                    <div class="modal-content">
+                        <img src="furniture13-large1.jpg" alt="Mebel 13 - Zdjęcie 1">
+                        <img src="furniture13-large2.jpg" alt="Mebel 13 - Zdjęcie 2">
+                        <img src="furniture13-large3.jpg" alt="Mebel 13 - Zdjęcie 3">
+                    </div>
+                </div>
+
+                <!-- Repeat similar block for other furniture items -->
+
             </div>
         </section>
     </main>
