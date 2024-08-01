@@ -1,257 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meble Protetyczne - R.S. Labor-Meble</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: url('tlo_lista.jpg') center/cover fixed;
-            min-height: 100vh;
-        }
-        header {
-            width: 100%;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            margin: 0;
-            font-size: 2em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        .content {
-            width: 80%;
-            max-width: 1200px;
-            margin: 20px;
-        }
-        .product-container {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        .product {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .product img {
-            width: 30%;
-            height: auto;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .product-details {
-            flex: 1;
-            margin-left: 20px;
-        }
-        .product-details h2 {
-            margin-top: 0;
-        }
-        .product-details p {
-            margin: 10px 0;
-        }
-        .back-link {
-            text-align: center;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-        .back-link a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 10px 20px;
-            border: 2px solid #333;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .back-link a:hover {
-            background-color: #333;
-            color: #fff;
-        }
-        footer {
-            width: 100%;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            text-align: center;
-            margin-top: auto;
-        }
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .footer-social {
-            display: flex;
-            gap: 10px;
-        }
-        .footer-social a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.5em;
-            transition: color 0.3s ease;
-        }
-        .footer-social a:hover {
-            color: #ccc;
-        }
-        .footer-text {
-            flex: 1;
-            text-align: center;
-        }
-    </style>
+    <title>Meble Protetyczne - Nazwa Firmy</title>
+    <link rel="stylesheet" href="styles4.css">
 </head>
 <body>
     <header>
-        <h1>Meble Protetyczne</h1>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Firmy" class="logo">
+            <h1>Nazwa Firmy</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">O nas</a></li>
+                <li><a href="services.html">Usługi</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="prosthetics-furniture.html">Meble Protetyczne</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="content">
-        <div class="product-container">
-            <div class="product">
-                <img src="protetyczne1.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne2.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne3.jpg" alt="Mebel Protetyczny 3">
-                <div class="product-details">
-                    <h2>Biurko ENS-pro jednostanowiskowe</h2>
-                    <p><strong>Opis:</strong> Wyposażenie obejmuje instalację elektryczną z trzema gniazdami pod blatem oraz instalację powietrzną z dmuchawką. Zestaw zawiera także matę roboczą oraz prowadnice szuflad z funkcją cichego dotyku, a całość jest wykonana z konstrukcji aluminiowej. Opcje dodatkowe to możliwość instalacji gazowej, dodanie kobyłki (dwukrotnie), lampy oraz wyciągu pyłu. Istnieje również opcja zmiany koloru.</p>
-                    <p><strong>Cena netto:</strong> 4400 PLN</p>
-                    <p><strong>Wymiary:</strong> 150 cm x 60 cm x 89 cm</p>
+    <main>
+        <section class="furniture">
+            <h2>Nasza Oferta Mebli Protetycznych</h2>
+            <div class="furniture-grid">
+                <div class="furniture-item">
+                    <img src="photo1.jpg" alt="Mebel 1" class="furniture-img" onclick="openModal('modal1')">
+                    <h3>Mebel Protetyczny 1</h3>
+                    <p><strong>Opis:</strong> Wysokiej jakości mebel protetyczny, idealny do zastosowań specjalistycznych.</p>
+                    <p><strong>Cena netto:</strong> 2000 PLN</p>
+                    <p><strong>Wielkość:</strong> 120x60x75 cm</p>
                 </div>
-            </div>
-        </div>
-        <div class="product-container">
-            <div class="product">
-                <img src="protetyczne2_1.jpg" alt="Mebel Protetyczny 2">
-                <img src="protetyczne2_2.jpg" alt="Mebel Protetyczny 2">
-                <div class="product-details">
-                    <h2>Biurko Protetyczne Kavo</h2>
-                    <p><strong>Opis:</strong> Dwustanowiskowe biurko protetyczne Kavo. Istnieje możliwość zamontowania kompletnego wyciągu Kavo, podłokietników, lampy oraz innych elementów według uznania klienta. Więcej informacji można uzyskać pod numerem telefonu.</p>
-                    <p><strong>Cena netto:</strong> 4900 PLN</p>
-                    <p><strong>Wymiary:</strong> Brak opisu</p>
+                <div id="modal1" class="modal">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <div class="modal-content">
+                        <img src="photo1" alt="Mebel 1 - Zdjęcie 1">
+                        <img src="photo1.jpg" alt="Mebel 1 - Zdjęcie 2">
+                        <img src="photo1.jpg" alt="Mebel 1 - Zdjęcie 3">
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="product-container">
-            <div class="product">
-                <img src="protetyczne3_1.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne3_2.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne3_3.jpg" alt="Mebel Protetyczny 3">
-                <div class="product-details">
-                    <h2>Biurko Protetyczne v1</h2>
-                    <p><strong>Opis:</strong> Biurko protetyczne wyposażone w instalację elektryczną i powietrzną. Biurko posiada również kanał z przyłączem na wąż odkurzacza, który pasuje do większości kobyłek, takich jak np. Zubler. Istnieje możliwość modyfikacji według indywidualnych potrzeb. Więcej informacji pod numerem telefonu.</p>
-                    <p><strong>Cena netto:</strong> 4300 PLN</p>
-                    <p><strong>Wymiary:</strong> 150 cm x 60 cm x 88-90 cm</p>
-                </div>
-            </div>
-        </div>
-        <div class="product-container">
-            <div class="product">
-                <img src="protetyczne4_1.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne4_2.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne4_3.jpg" alt="Mebel Protetyczny 3">
-                <div class="product-details">
-                    <h2>Biurko Protetyczne v2</h2>
-                    <p><strong>Opis:</strong> Biurko protetyczne wyposażone jest w dwie dmuchawki sprężonego powietrza oraz instalację elektryczną podblatową z trzema gniazdami na każde stanowisko. Posiada dwa kanały pod kobyłkę, półkę na prace oraz dwie maty robocze. Istnieje możliwość dokupienia kobyłek, zmiany wymiarów i kolorystyki, a także instalacji gazowej z podwójnym zaworem. Więcej informacji pod numerem telefonu.</p>
-                    <p><strong>Cena netto:</strong> 5900 PLN</p>
-                    <p><strong>Wymiary:</strong> 270 cm x 60 cm x 87-90 cm</p>
-                </div>
-            </div>
-        </div>
-        <div class="product-container">
-            <div class="product">
-                <img src="protetyczne5_1.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne5_2.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne5_3.jpg" alt="Mebel Protetyczny 3">
-                <div class="product-details">
-                    <h2>Biurko Protetyczne v3</h2>
-                    <p><strong>Opis:</strong> Sprzedam nowe biurko dwustanowiskowe wyposażone w instalację gazową na dwa palniki, a także instalację elektryczną i powietrzną. Biurko posiada półkę na prace. Istnieje możliwość zamontowania wyciągu lub zmiany wymiarów. Oferuję transport. Więcej informacji pod numerem telefonu.</p>
-                    <p><strong>Cena netto:</strong> 4900 PLN</p>
-                    <p><strong>Wymiary:</strong> 210 cm x 60 cm x 88-90 cm</p>
-                </div>
-            </div>
-          </div>
 
-              <div class="product-container">
-            <div class="product">
-                <img src="protetyczne6_1.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne6_2.jpg" alt="Mebel Protetyczny 3">
-                <div class="product-details">
-                    <h2>Biurko Protetyczne v4</h2>
-                    <p><strong>Opis:</strong> Biurko protetyczne ENS-pro jednostanowiskowe jest solidnie wykonane z płyty laminowanej, zarówno blat, jak i szafki, które są dostępne w różnych kolorach do wyboru. Szuflady zostały wyposażone w mechanizm cichego domyku, a nad kolanami znajduje się wkład stalowy. Biurko posiada instalację elektryczną oraz dmuchawki sprężonego powietrza, co zwiększa jego funkcjonalność.Dodatkowe opcje, które można zamontować, obejmują kobyłki, podłokietniki, instalację gazową, lampy oraz odciągi pyłu. Dzięki tym możliwościom biurko można dostosować do indywidualnych potrzeb użytkownika.</p>
-                    <p><strong>Cena netto:</strong> 4400 PLN</p>
-                    <p><strong>Wymiary:</strong> 150 cm x 60 cm x 87-90 cm</p>
+                <div class="furniture-item">
+                    <img src="photo1.jpg" alt="Mebel 2" class="furniture-img" onclick="openModal('modal2')">
+                    <h3>Mebel Protetyczny 2</h3>
+                    <p><strong>Opis:</strong> Nowoczesny mebel protetyczny, który łączy funkcjonalność z estetyką.</p>
+                    <p><strong>Cena netto:</strong> 1500 PLN</p>
+                    <p><strong>Wielkość:</strong> 100x50x70 cm</p>
                 </div>
-            </div>
-          </div>
+                <div id="modal2" class="modal">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <div class="modal-content">
+                        <img src="photo1.jpg" alt="Mebel 2 - Zdjęcie 1">
+                        <img src="photo1.jpg" alt="Mebel 2 - Zdjęcie 2">
+                        <img src="photo1.jpg" alt="Mebel 2 - Zdjęcie 3">
+                    </div>
+                </div>
 
-                    <div class="product-container">
-            <div class="product">
-                <img src="protetyczne7_1.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne7_2.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne7_3.jpg" alt="Mebel Protetyczny 3">
-                <div class="product-details">
-                    <h2>Biurko Protetyczne v5</h2>
-                    <p><strong>Opis:</strong> Biurko jednostanowiskowe cechuje się solidnym blatem wykonanym z litego buku oraz stabilnym stelażem aluminiowym. Szafki są wykonane z płyty laminowanej, dostępnej w różnych kolorach, co pozwala na dopasowanie do preferencji estetycznych. Szuflady wyposażone są w mechanizm cichego domyku, a nad kolanami znajduje się stalowy wkład do szuflad, zapewniający dodatkową wytrzymałość i funkcjonalność. Biurko jest wyposażone w instalację elektryczną oraz dmuchawki sprężonego powietrza, co umożliwia wygodne i efektywne wykonywanie pracy. Dodatkowo, istnieje możliwość rozbudowy biurka o kobyłki, podłokietniki, instalację gazową, lampy oraz odciągi pyłu, co pozwala na indywidualne dostosowanie do specyficznych potrzeb użytkownika.</p>
-                    <p><strong>Cena netto:</strong> 4400 PLN</p>
-                    <p><strong>Wymiary:</strong> 150 cm x 60 cm x 87-90 cm</p>
+                <div class="furniture-item">
+                    <img src="photo1.jpg" alt="Mebel 3" class="furniture-img" onclick="openModal('modal3')">
+                    <h3>Mebel Protetyczny 3</h3>
+                    <p><strong>Opis:</strong> Ergonomiczny mebel protetyczny zaprojektowany z myślą o komforcie.</p>
+                    <p><strong>Cena netto:</strong> 2500 PLN</p>
+                    <p><strong>Wielkość:</strong> 130x65x80 cm</p>
                 </div>
-            </div>
-          </div>
+                <div id="modal3" class="modal">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <div class="modal-content">
+                        <img src="photo1.jpg" alt="Mebel 3 - Zdjęcie 1">
+                        <img src="photo1.jpg" alt="Mebel 3 - Zdjęcie 2">
+                        <img src="photo1.jpg" alt="Mebel 3 - Zdjęcie 3">
+                    </div>
+                </div>
 
-                          <div class="product-container">
-            <div class="product">
-                <img src="protetyczne8_1.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne8_2.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne8_3.jpg" alt="Mebel Protetyczny 3">
-                <div class="product-details">
-                    <h2>Biurko Protetyczne v6</h2>
-                    <p><strong>Opis:</strong> Biurko protetyczne dwustanowiskowe oferuje dwie dmuchawki sprężonego powietrza oraz instalację elektryczną podblatową z trzema gniazdami na każde stanowisko. Posiada także dwa kanały pod kobyłkę, półkę na pracę oraz dwie maty robocze. Istnieje możliwość dokupienia dodatkowych kobyłek, zmiany wymiarów oraz kolorystyki. Dodatkowo, istnieje opcja instalacji gazowej z podwójnym zaworem, co zwiększa funkcjonalność biurka, umożliwiając dostosowanie go do specyficznych potrzeb użytkownika.</p>
-                    <p><strong>Cena netto:</strong> 5400 PLN</p>
-                    <p><strong>Wymiary:</strong> 210 cm x 60 cm x 87-90 cm</p>
+                <div class="furniture-item">
+                    <img src="furniture4.jpg" alt="Mebel 4" class="furniture-img" onclick="openModal('modal4')">
+                    <h3>Mebel Protetyczny 4</h3>
+                    <p><strong>Opis:</strong> Wytrzymały mebel protetyczny stworzony z wysokiej jakości materiałów.</p>
+                    <p><strong>Cena netto:</strong> 1800 PLN</p>
+                    <p><strong>Wielkość:</strong> 110x55x75 cm</p>
                 </div>
-            </div>
-          </div>
+                <div id="modal4" class="modal">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <div class="modal-content">
+                        <img src="furniture4-large1.jpg" alt="Mebel 4 - Zdjęcie 1">
+                        <img src="furniture4-large2.jpg" alt="Mebel 4 - Zdjęcie 2">
+                        <img src="furniture4-large3.jpg" alt="Mebel 4 - Zdjęcie 3">
+                    </div>
+                </div>
 
-                                <div class="product-container">
-            <div class="product">
-                <img src="protetyczne9_1.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne9_2.jpg" alt="Mebel Protetyczny 3">
-                <img src="protetyczne9_3.jpg" alt="Mebel Protetyczny 3">
-                <div class="product-details">
-                    <h2>Biurko Protetyczne v7</h2>
-                    <p><strong>Opis:</strong> Oferta dotyczy biurka czterostanowiskowego, które charakteryzuje się solidnym blatem z litego buku oraz szafkami z płyty laminowanej, dostępnymi w różnych kolorach. Szuflady wyposażone są w mechanizm cichego domyku, a nad kolanami znajduje się wkład stalowy, zapewniający dodatkową wytrzymałość i stabilność. Biurko jest wyposażone w instalację elektryczną oraz dmuchawki sprężonego powietrza, co ułatwia pracę przy skomplikowanych zadaniach protetycznych.Dodatkowe opcje do wyboru obejmują możliwość montażu kobyłek, podłokietników, instalacji gazowej, lamp oraz odciągów pyłu, co pozwala na indywidualne dostosowanie biurka do potrzeb użytkownika oraz specyficznych wymagań miejsc pracy.</p>
-                    <p><strong>Cena netto:</strong> 13500 PLN</p>
-                    <p><strong>Wymiary:</strong> 160 cm x 160 cm x 88-90 cm</p>
+                <div class="furniture-item">
+                    <img src="furniture5.jpg" alt="Mebel 5" class="furniture-img" onclick="openModal('modal5')">
+                    <h3>Mebel Protetyczny 5</h3>
+                    <p><strong>Opis:</strong> Innowacyjny mebel protetyczny, zapewniający komfort i funkcjonalność.</p>
+                    <p><strong>Cena netto:</strong> 2200 PLN</p>
+                    <p><strong>Wielkość:</strong> 125x60x80 cm</p>
+                </div>
+                <div id="modal5" class="modal">
+                    <span class="close" onclick="closeModal('modal5')">&times;</span>
+                    <div class="modal-content">
+                        <img src="furniture5-large1.jpg" alt="Mebel 5 - Zdjęcie 1">
+                        <img src="furniture5-large2.jpg" alt="Mebel 5 - Zdjęcie 2">
+                        <img src="furniture5-large3.jpg" alt="Mebel 5 - Zdjęcie 3">
+                    </div>
+                </div>
+
+                <div class="furniture-item">
+                    <img src="furniture6.jpg" alt="Mebel 6" class="furniture-img" onclick="openModal('modal6')">
+                    <h3>Mebel Protetyczny 6</h3>
+                    <p><strong>Opis:</strong> Stylowy mebel protetyczny z nowoczesnym designem.</p>
+                    <p><strong>Cena netto:</strong> 2400 PLN</p>
+                    <p><strong>Wielkość:</strong> 140x70x85 cm</p>
+                </div>
+                <div id="modal6" class="modal">
+                    <span class="close" onclick="closeModal('modal6')">&times;</span>
+                    <div class="modal-content">
+                        <img src="furniture6-large1.jpg" alt="Mebel 6 - Zdjęcie 1">
+                        <img src="furniture6-large2.jpg" alt="Mebel 6 - Zdjęcie 2">
+                        <img src="furniture6-large3.jpg" alt="Mebel 6 - Zdjęcie 3">
+                    </div>
+                </div>
+
+                <div class="furniture-item">
+                    <img src="furniture7.jpg" alt="Mebel 7" class="furniture-img" onclick="openModal('modal7')">
+                    <h3>Mebel Protetyczny 7</h3>
+                    <p><strong>Opis:</strong> Ekskluzywny mebel protetyczny z eleganckimi wykończeniami.</p>
+                    <p><strong>Cena netto:</strong> 2600 PLN</p>
+                    <p><strong>Wielkość:</strong> 150x75x90 cm</p>
+                </div>
+                <div id="modal7" class="modal">
+                    <span class="close" onclick="closeModal('modal7')">&times;</span>
+                    <div class="modal-content">
+                        <img src="furniture7-large1.jpg" alt="Mebel 7 - Zdjęcie 1">
+                        <img src="furniture7-large2.jpg" alt="Mebel 7 - Zdjęcie 2">
+                        <img src="furniture7-large3.jpg" alt="Mebel 7 - Zdjęcie 3">
+                    </div>
+                </div>
+
+                <div class="furniture-item">
+                    <img src="furniture8.jpg" alt="Mebel 8" class="furniture-img" onclick="openModal('modal8')">
+                    <h3>Mebel Protetyczny 8</h3>
+                    <p><strong>Opis:</strong> Funkcjonalny mebel protetyczny z zaawansowanymi opcjami regulacji.</p>
+                    <p><strong>Cena netto:</strong> 2300 PLN</p>
+                    <p><strong>Wielkość:</strong> 135x65x80 cm</p>
+                </div>
+                <div id="modal8" class="modal">
+                    <span class="close" onclick="closeModal('modal8')">&times;</span>
+                    <div class="modal-content">
+                        <img src="furniture8-large1.jpg" alt="Mebel 8 - Zdjęcie 1">
+                        <img src="furniture8-large2.jpg" alt="Mebel 8 - Zdjęcie 2">
+                        <img src="furniture8-large3.jpg" alt="Mebel 8 - Zdjęcie 3">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="back-link">
-        <a href="index.html">Powrót do strony głównej</a>
-    </div>
+        </section>
+    </main>
     <footer>
-        <div class="footer-content">
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-instagram-square"></i></a>
-            </div>
-            <div class="footer-text">
-                © 2024 R.S Labor Meble
-            </div>
-        </div>
+        <p>&copy; 2024 Nazwa Firmy. Wszelkie prawa zastrzeżone.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
