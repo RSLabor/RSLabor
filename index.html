@@ -13,161 +13,140 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #f4f4f4;
-            color: #333;
+            background: url('tlo.jpg') center/cover fixed; /* Tło strony */
         }
 
         header {
             width: 100%;
             padding: 20px;
-            background-color: #004080;
+            background-color: #333;
             color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         header img {
-            width: 50px;
-            height: 50px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-right: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 1.8em;
+        h1 {
+            margin: 3cm 0 0; /* Przesunięcie o 3 cm w dół */
+            font-size: 1.5em;
+            color: #FFF; /* Zmiana koloru tekstu na czarny */
         }
 
         nav {
             width: 100%;
-            background-color: #003366;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
             display: flex;
-            justify-content: center;
-            padding: 10px 0;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: rgba(255, 255, 255, 0.8); /* Tło dla odnośników */
         }
 
         nav a {
-            color: #fff;
+            flex-basis: calc(50% - 20px);
+            margin: 10px;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 10px 20px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
+            color: #000; /* Zmiana koloru tekstu na czarny */
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.5); /* Przezroczyste tło */
+            border-radius: 8px;
         }
 
         nav a:hover {
-            background-color: #00509e;
+            background-color: #555;
+            color: #fff;
+            transform: scale(1.05);
         }
 
-        .main-content {
-            width: 100%;
-            max-width: 1200px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .about-us {
-            background-color: #fff;
-            padding: 20px;
+        .main-image {
+            margin: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            text-align: center;
-            max-width: 800px;
-        }
-
-        .testimonials {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            max-width: 800px;
-            text-align: center;
-        }
-
-        .testimonials h2 {
-            margin-top: 0;
-        }
-
-        .testimonial {
-            margin: 10px 0;
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .counter {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            max-width: 800px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .counter div {
-            text-align: center;
-        }
-
-        .counter div h3 {
-            margin: 0;
-            font-size: 2em;
-            color: #004080;
-        }
-
-        .counter div p {
-            margin: 5px 0 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%; /* Szerokość zdjęcia głównego */
+            max-width: 400px; /* Maksymalna szerokość zdjęcia */
+            transition: opacity 0.5s ease; /* Efekt przejścia */
         }
 
         footer {
             width: 100%;
             padding: 20px;
-            background-color: #003366;
-            color: #fff;
+            background-color: #333;
+            color: #FFF; /* Zmiana koloru tekstu na czarny */
             text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
         }
 
         /* Media Queries dla telefonów komórkowych */
         @media (max-width: 767px) {
             header {
-                flex-direction: column;
-                text-align: center;
+                padding: 10px;
             }
 
             header img {
-                margin: 0 0 10px 0;
+                width: 60px;
+                height: 60px;
+            }
+
+            h1 {
+                font-size: 1.2em;
             }
 
             nav {
-                flex-wrap: wrap;
+                padding: 5px;
             }
 
             nav a {
-                margin: 5px;
+                flex-basis: calc(100% - 20px);
             }
 
-            .counter {
-                flex-direction: column;
+            .main-image {
+                width: 90%; /* Dostosuj szerokość zdjęcia głównego */
             }
+        }
 
-            .counter div {
-                margin-bottom: 20px;
+        /* Media Queries dla tabletów i większych ekranów */
+        @media (min-width: 768px) {
+            nav a {
+                flex-basis: calc(33.33% - 20px);
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div>
-            <img src="logo.png" alt="Logo Firmy">
-            <h1>R.S. Labor Meble</h1>
-        </div>
+        <img src="logo.png" alt="Logo Firmy">
+        <h1>R.S. Labor Meble</h1>
     </header>
 
     <nav>
@@ -179,65 +158,28 @@
         <a href="kontakt.html">Kontakt</a>
     </nav>
 
-    <div class="main-content">
-        <div class="about-us">
-            <h2>O nas</h2>
-            <p>R.S. Labor Meble to firma specjalizująca się w projektowaniu i produkcji wysokiej jakości mebli protetycznych i stomatologicznych. Nasze produkty charakteryzują się nowoczesnym designem, funkcjonalnością i trwałością.</p>
-        </div>
-
-        <div class="testimonials">
-            <h2>Referencje klientów</h2>
-            <div class="testimonial">
-                <p>"R.S. Labor Meble zapewniło nam najlepsze meble do naszego gabinetu. Jesteśmy bardzo zadowoleni z jakości i obsługi!"</p>
-                <p>- Dr Jan Kowalski</p>
-            </div>
-            <div class="testimonial">
-                <p>"Profesjonalne podejście do klienta i doskonałe wykonanie. Polecamy każdemu!"</p>
-                <p>- Protetyka Dental</p>
-            </div>
-        </div>
-
-        <div class="counter">
-            <div>
-                <h3 id="projects-count">0</h3>
-                <p>Zrealizowanych projektów</p>
-            </div>
-            <div>
-                <h3 id="clients-count">0</h3>
-                <p>Zadowolonych klientów</p>
-            </div>
-            <div>
-                <h3 id="years-count">0</h3>
-                <p>Lat doświadczenia</p>
-            </div>
-        </div>
-    </div>
+    <img src="zdjecie1.jpg" alt="Zdjęcie główne" class="main-image">
 
     <footer>
         © 2024 R.S Labor Meble
     </footer>
 
     <script>
-        // Skrypt JavaScript do dynamicznego licznika
-        function animateCounter(id, start, end, duration) {
-            const obj = document.getElementById(id);
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                obj.innerText = Math.floor(progress * (end - start) + start);
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
-            window.requestAnimationFrame(step);
+        // Skrypt JavaScript do przewijania zdjęć głównych
+        const mainImage = document.querySelector('.main-image');
+        const imageList = ['zdjecie1.jpg', 'zdjecie2.jpg', 'zdjecie3.jpg', 'zdjecie4.jpg', 'zdjecie5.jpg', 'zdjecie6.jpg'];
+        let currentIndex = 0;
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % imageList.length;
+            mainImage.style.opacity = 0; // Efekt znikania
+            setTimeout(() => {
+                mainImage.src = imageList[currentIndex];
+                mainImage.style.opacity = 1; // Efekt pojawiania się
+            }, 700); // Czas oczekiwania przed zmianą obrazka (w milisekundach)
         }
 
-        document.addEventListener("DOMContentLoaded", () => {
-            animateCounter("projects-count", 0, 150, 2000);
-            animateCounter("clients-count", 0, 300, 2000);
-            animateCounter("years-count", 0, 25, 2000);
-        });
+        setInterval(changeImage, 7000); // zmień czas przewijania na dowolną wartość w milisekundach (np. co 3 sekundy)
     </script>
 </body>
 </html>
