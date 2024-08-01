@@ -1,8 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
 
@@ -56,6 +60,7 @@ nav a:hover {
 }
 
 main {
+    flex: 1; /* Rozciąga main, aby zajął dostępną przestrzeń */
     padding: 20px;
 }
 
@@ -143,6 +148,7 @@ main {
     justify-content: center; /* Center align images */
 }
 
+/* Image styles */
 .modal-content img {
     flex: 1 1 calc(33.333% - 20px); /* 3 images per row with space in between */
     max-width: calc(33.333% - 20px); /* Prevent images from overflowing */
@@ -150,17 +156,32 @@ main {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-/* Placeholder style */
-.modal-content .placeholder {
-    flex: 1 1 calc(33.333% - 20px); /* 3 placeholders per row with space in between */
-    max-width: calc(33.333% - 20px); /* Prevent placeholders from overflowing */
-    height: auto; /* Maintain aspect ratio */
-    background-color: #e0e0e0; /* Light gray background for placeholders */
-    border-radius: 8px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 14px;
+/* Hide empty space dynamically */
+.modal-content:after {
+    content: '';
+    display: block;
+    flex: 1 1 100%; /* Make sure it takes the full row if needed */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative; /* Ensure it is positioned relative to its normal flow */
 }
