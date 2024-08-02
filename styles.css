@@ -228,4 +228,17 @@ h2 {
     .tab {
         max-width: 100%;
     }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
