@@ -1,6 +1,8 @@
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 body {
@@ -19,6 +21,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     width: 100%; /* Ensure header is full width */
+    box-sizing: border-box; /* Include padding and border in width */
 }
 
 .logo-container {
@@ -63,6 +66,8 @@ nav a:hover {
 main {
     flex: 1;
     padding: 20px;
+    box-sizing: border-box; /* Include padding in width */
+    width: 100%; /* Ensure main content is full width */
 }
 
 .furniture {
@@ -180,6 +185,7 @@ footer {
     padding: 10px 20px;
     width: 100%;
     position: relative;
+    box-sizing: border-box; /* Include padding in width */
 }
 
 /* Media Queries for responsiveness */
