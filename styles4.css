@@ -5,14 +5,20 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header */
+/* Główna struktura */
 header {
     background: linear-gradient(90deg, #0078d4, #0056a3);
     color: #fff;
@@ -22,6 +28,23 @@ header {
     padding: 20px 40px;
     flex-wrap: wrap;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    flex: 1; /* Rozciąga zawartość tak, by stopka była zawsze na dole */
+    padding: 20px;
+}
+
+/* Stopka */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .logo-container {
