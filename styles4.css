@@ -1,208 +1,177 @@
-/* Reset stylów */
+/* Reset i style bazowe */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Główna struktura */
+/* Nagłówek */
 header {
-    background: linear-gradient(90deg, #0078d4, #0056a3);
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    flex-wrap: wrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-main {
-    flex: 1; /* Rozciąga zawartość tak, by stopka była zawsze na dole */
     padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-/* Stopka */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
 .logo-container {
     display: flex;
     align-items: center;
 }
-
 .logo {
-    width: 50px;
     height: 50px;
     margin-right: 10px;
-    border-radius: 50%;
-    object-fit: cover;
+    transition: transform 0.3s ease;
 }
-
-h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
+.logo-container:hover .logo {
+    transform: scale(1.1);
 }
-
 .nav-links {
-    display: flex;
-    gap: 20px;
     list-style: none;
+    display: flex;
 }
-
+.nav-links li {
+    margin: 0 15px;
+}
 .nav-links a {
-    color: #fff;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
-
 .nav-links a:hover {
-    color: #ffd700;
+    color: #007BFF;
 }
 
-/* Furniture Section */
+/* Sekcja Mebli Protetycznych */
 .furniture {
     padding: 50px 20px;
-    background: #fff;
+    text-align: center;
 }
-
 .furniture h2 {
-    text-align: center;
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: 30px;
-    color: #333;
+    color: #007BFF;
+    animation: fadeInDown 1s ease-out;
 }
-
 .furniture-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
 }
-
 .furniture-item {
-    background: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 300px;
+    background: #fff;
     padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
-
 .furniture-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
-
 .furniture-img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
-
+.furniture-img:hover {
+    transform: scale(1.05);
+}
 .furniture-item h3 {
     margin-top: 15px;
-    font-size: 1.2rem;
-    color: #333;
+    color: #007BFF;
 }
-
 .furniture-item p {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #555;
+    margin: 10px 0;
+    font-size: 1em;
+    line-height: 1.6;
 }
 
-.furniture-item p strong {
-    color: #333;
-}
-
-/* Modal */
+/* Stylizacja modali */
 .modal {
-    display: none;
+    display: none; /* Ukryte domyślnie */
     position: fixed;
-    top: 0;
+    z-index: 1000;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    animation: fadeIn 0.5s;
 }
-
 .modal-content {
+    margin: 5% auto;
     display: flex;
-    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 90%;
-    margin: 20px;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
 }
-
 .modal-content img {
+    width: 100%;
     max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
-
+.modal-content img:hover {
+    transform: scale(1.05);
+}
 .close {
+    color: #fff;
     position: absolute;
     top: 20px;
-    right: 20px;
-    font-size: 2rem;
-    color: #fff;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: color 0.3s ease;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
 }
 
-.close:hover {
-    transform: scale(1.2);
-}
-
-/* Footer */
+/* Stopka */
 footer {
+    padding: 20px;
+    text-align: center;
     background: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9rem;
 }
 
-/* Media Queries */
+/* Animacje */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsywność */
 @media (max-width: 768px) {
-    .furniture-grid {
+    header {
         flex-direction: column;
     }
-
-    .furniture-item {
-        max-width: 100%;
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
     }
-
-    .modal-content img {
-        max-width: 90%;
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .furniture {
+        padding: 30px 10px;
     }
 }
