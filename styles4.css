@@ -61,9 +61,10 @@ header {
 }
 .furniture-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr; /* Jedna kolumna – każdy element pod sobą */
     gap: 20px;
 }
+
 .furniture-item {
     background: #fff;
     padding: 20px;
