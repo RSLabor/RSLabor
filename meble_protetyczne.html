@@ -29,16 +29,26 @@
                 <div class="furniture-item">
                     <img src="protetyczne1.jpg" alt="Mebel 1" class="furniture-img" onclick="openModal('modal1')">
                     <h3>Biurko ENS-pro jednostanowiskowe</h3>
-                    <p><strong>Opis:</strong>Wyposażenie obejmuje instalację elektryczną z trzema gniazdami pod blatem oraz instalację powietrzną z dmuchawką. Zestaw zawiera także matę roboczą oraz prowadnice szuflad z funkcją cichego dotyku, a całość jest wykonana z konstrukcji aluminiowej. Opcje dodatkowe to możliwość instalacji gazowej, dodanie kobyłki (dwukrotnie), lampy oraz wyciągu pyłu. Istnieje również opcja zmiany koloru.</p>
+                    <p><strong>Opis:</strong> Wyposażenie obejmuje instalację elektryczną z trzema gniazdami pod blatem oraz instalację powietrzną z dmuchawką. Zestaw zawiera także matę roboczą oraz prowadnice szuflad z funkcją cichego dotyku. Konstrukcja aluminiowa. Opcje dodatkowe: instalacja gazowa, kobyłka, lampa, wyciąg pyłu, zmiana koloru.</p>
                     <p><strong>Cena netto:</strong> 4400 PLN</p>
                     <p><strong>Wielkość:</strong> 150x60x89 cm</p>
                 </div>
                 <div id="modal1" class="modal">
                     <span class="close" onclick="closeModal('modal1')">&times;</span>
                     <div class="modal-content">
-                        <img src="protetyczne1_1.jpg" alt="Mebel 1 - Zdjęcie 1">
-                        <img src="meble_protetyczne1_2.jpg" alt="Mebel 1 - Zdjęcie 2">
-                        <img src="meble_protetyczne1_3.jpg" alt="Mebel 1 - Zdjęcie 3">
+                        <!-- Galeria po lewej -->
+                        <div class="modal-left">
+                            <img src="protetyczne1_1.jpg" alt="Mebel 1 - Zdjęcie 1">
+                            <img src="meble_protetyczne1_2.jpg" alt="Mebel 1 - Zdjęcie 2">
+                            <img src="meble_protetyczne1_3.jpg" alt="Mebel 1 - Zdjęcie 3">
+                        </div>
+                        <!-- Opis po prawej -->
+                        <div class="modal-right">
+                            <h3>Biurko ENS-pro jednostanowiskowe</h3>
+                            <p><strong>Opis:</strong> Wyposażenie obejmuje instalację elektryczną z trzema gniazdami pod blatem oraz instalację powietrzną z dmuchawką. Zestaw zawiera także matę roboczą i prowadnice szuflad z funkcją cichego dotyku. Opcje dodatkowe: instalacja gazowa, kobyłka, lampa, wyciąg pyłu, zmiana koloru.</p>
+                            <p><strong>Cena netto:</strong> 4400 PLN</p>
+                            <p><strong>Wielkość:</strong> 150x60x89 cm</p>
+                        </div>
                     </div>
                 </div>
 
@@ -46,14 +56,22 @@
                 <div class="furniture-item">
                     <img src="meble_protetyczne2.jpg" alt="Mebel 2" class="furniture-img" onclick="openModal('modal2')">
                     <h3>Biurko Protetyczne ANS plus</h3>
-                    <p><strong>Opis:Biurko jednostanowiskowe ANS plus to nowoczesne rozwiązanie z aluminiową konstrukcją, zapewniające komfortowe warunki pracy. Wyposażone jest w instalację elektryczną z trzema gniazdami umieszczonymi pod blatem, instalację powietrzną z dmuchawką oraz matę roboczą. Posiada również prowadnice szuflad z mechanizmem cichego domyku. W ramach opcji dodatkowych dostępne są instalacja gazowa, kobylka (podpórka), lampa, wyciąg pyłu oraz możliwość zmiany koloru mebla.</strong></p>
+                    <p><strong>Opis:</strong> Biurko jednostanowiskowe ANS plus to nowoczesne rozwiązanie z aluminiową konstrukcją, zapewniające komfortowe warunki pracy. Wyposażone w instalację elektryczną z trzema gniazdami, instalację powietrzną z dmuchawką i matę roboczą.</p>
                     <p><strong>Cena netto:</strong> 3600 PLN</p>
-                    <p><strong>Wielkość:</strong> 150x60x89 cm </p>
+                    <p><strong>Wielkość:</strong> 150x60x89 cm</p>
                 </div>
-                 <div id="modal2" class="modal">
+                <div id="modal2" class="modal">
                     <span class="close" onclick="closeModal('modal2')">&times;</span>
                     <div class="modal-content">
-                        <img src="meble_protetyczne2.jpg" alt="Mebel 3 - Zdjęcie 1">
+                        <div class="modal-left">
+                            <img src="meble_protetyczne2.jpg" alt="Mebel 2 - Zdjęcie 1">
+                        </div>
+                        <div class="modal-right">
+                            <h3>Biurko Protetyczne ANS plus</h3>
+                            <p><strong>Opis:</strong> Biurko jednostanowiskowe ANS plus to nowoczesne rozwiązanie z aluminiową konstrukcją, zapewniające komfortowe warunki pracy. Wyposażone w instalację elektryczną z trzema gniazdami pod blatem, instalację powietrzną z dmuchawką oraz matę roboczą. Posiada prowadnice szuflad z mechanizmem cichego domyku. Opcje dodatkowe: instalacja gazowa, kobylka, lampa, wyciąg pyłu, zmiana koloru.</p>
+                            <p><strong>Cena netto:</strong> 3600 PLN</p>
+                            <p><strong>Wielkość:</strong> 150x60x89 cm</p>
+                        </div>
                     </div>
                 </div>
 
@@ -61,132 +79,216 @@
                 <div class="furniture-item">
                     <img src="protetyczne3.jpg" alt="Mebel 3" class="furniture-img" onclick="openModal('modal3')">
                     <h3>Biurko ENS 2</h3>
-                    <p><strong>Opis:</strong>Biurko protetyczne wyposażone w instalację elektryczną i powietrzną. Biurko posiada również kanał z przyłączem na wąż odkurzacza, który pasuje do większości kobyłek, takich jak np. Zubler. Istnieje możliwość modyfikacji według indywidualnych potrzeb. Więcej informacji pod numerem telefonu.</p>
+                    <p><strong>Opis:</strong> Biurko protetyczne z instalacją elektryczną i powietrzną, kanałem na wąż odkurzacza (np. Zubler). Możliwa modyfikacja według potrzeb.</p>
                     <p><strong>Cena netto:</strong> 5400 PLN</p>
                     <p><strong>Wielkość:</strong> 210x60x89 cm</p>
                 </div>
                 <div id="modal3" class="modal">
                     <span class="close" onclick="closeModal('modal3')">&times;</span>
                     <div class="modal-content">
-                        <img src="protetyczne3_1.jpg" alt="Mebel 3 - Zdjęcie 1">
-                        <img src="meble_protetyczne3_2.jpg" alt="Mebel 3 - Zdjęcie 2">
-                        <img src="meble_protetyczne3_3.jpg" alt="Mebel 3 - Zdjęcie 2">
+                        <div class="modal-left">
+                            <img src="protetyczne3_1.jpg" alt="Mebel 3 - Zdjęcie 1">
+                            <img src="meble_protetyczne3_2.jpg" alt="Mebel 3 - Zdjęcie 2">
+                            <img src="meble_protetyczne3_3.jpg" alt="Mebel 3 - Zdjęcie 3">
+                        </div>
+                        <div class="modal-right">
+                            <h3>Biurko ENS 2</h3>
+                            <p><strong>Opis:</strong> Biurko protetyczne wyposażone w instalację elektryczną i powietrzną. Posiada kanał z przyłączem na wąż odkurzacza (np. Zubler). Możliwość modyfikacji według indywidualnych potrzeb.</p>
+                            <p><strong>Cena netto:</strong> 5400 PLN</p>
+                            <p><strong>Wielkość:</strong> 210x60x89 cm</p>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Mebel 4 -->
                 <div class="furniture-item">
-                    <img src="meble_protetyczne4.jpg" alt="Mebel 5" class="furniture-img" onclick="openModal('modal4')">
+                    <img src="meble_protetyczne4.jpg" alt="Mebel 4" class="furniture-img" onclick="openModal('modal4')">
                     <h3>Biurko ENS - eko</h3>
-                    <p><strong>Opis:</strong> Urządzenie składa się z wytrzymałej konstrukcji aluminiowej, wyposażonej w praktyczne elementy instalacyjne. Zawiera instalację elektryczną z trzema gniazdami umieszczonymi pod blatem, instalację powietrzną z dmuchawką oraz matę roboczą, zapewniającą wygodę użytkowania. Szuflady zostały wyposażone w prowadnice z systemem cichego domykania. Opcjonalnie można zainstalować instalację gazową, dodatkową lampę, kobytkę oraz zmienić kolor urządzenia wedle preferencji użytkownika.</p>
+                    <p><strong>Opis:</strong> Konstrukcja aluminiowa z instalacją elektryczną (3 gniazda), powietrzną (dmuchawka), matą roboczą i prowadnicami cichego domyku. Opcjonalnie instalacja gazowa, lampa, kobytka, zmiana koloru.</p>
                     <p><strong>Cena netto:</strong> 4000 PLN</p>
                     <p><strong>Wielkość:</strong> 110x60x89 cm</p>
                 </div>
                 <div id="modal4" class="modal">
                     <span class="close" onclick="closeModal('modal4')">&times;</span>
                     <div class="modal-content">
-                        <img src="meble_protetyczne4.jpg" alt="Mebel 6 - Zdjęcie 1">
+                        <div class="modal-left">
+                            <img src="meble_protetyczne4.jpg" alt="Mebel 4 - Zdjęcie 1">
+                        </div>
+                        <div class="modal-right">
+                            <h3>Biurko ENS - eko</h3>
+                            <p><strong>Opis:</strong> Urządzenie z konstrukcją aluminiową, instalacją elektryczną (3 gniazda), instalacją powietrzną (dmuchawka), matą roboczą oraz szufladami z cichym domykiem. Opcjonalnie instalacja gazowa, dodatkowa lampa, kobytka i zmiana koloru.</p>
+                            <p><strong>Cena netto:</strong> 4000 PLN</p>
+                            <p><strong>Wielkość:</strong> 110x60x89 cm</p>
+                        </div>
                     </div>
                 </div>
-                    <div class="furniture-item">
+
+                <!-- Mebel 5 -->
+                <div class="furniture-item">
                     <img src="meble_protetyczne5.jpg" alt="Mebel 5" class="furniture-img" onclick="openModal('modal5')">
                     <h3>Biurko ANS - trzystanowiskowe</h3>
-                    <p><strong>Opis:</strong>Biurko trzystanowiskowe to funkcjonalne rozwiązanie, zaprojektowane z myślą o wygodzie pracy. Wyposażone jest w instalację elektryczną z trzema zestawami po trzy gniazda umieszczonymi pod blatem oraz instalację powietrzną z dmuchawkami. Posiada matę roboczą i prowadnice szuflad z mechanizmem cichego domyku. W ramach opcji dodatkowych dostępne są instalacja gazowa, kobylka (podpórka), lampa oraz możliwość zmiany koloru mebla.</p>
+                    <p><strong>Opis:</strong> Trzystanowiskowe, z instalacją elektryczną (3x3 gniazda), powietrzną (dmuchawki), matą roboczą i prowadnicami cichego domyku. Opcje: gaz, kobylka, lampa, zmiana koloru.</p>
                     <p><strong>Cena netto:</strong> 11500 PLN</p>
-                    <p><strong>Wielkość:</strong> Brak informacji </p>
+                    <p><strong>Wielkość:</strong> Brak informacji</p>
                 </div>
-                
                 <div id="modal5" class="modal">
                     <span class="close" onclick="closeModal('modal5')">&times;</span>
                     <div class="modal-content">
-                        <img src="meble_protetyczne5_1.jpg" alt="Mebel 6 - Zdjęcie 1">
-                        <img src="meble_protetyczne5_2.jpg" alt="Mebel 6 - Zdjęcie 1">
-                        <img src="meble_protetyczne5_3.jpg" alt="Mebel 6 - Zdjęcie 1">
+                        <div class="modal-left">
+                            <img src="meble_protetyczne5_1.jpg" alt="Mebel 5 - Zdjęcie 1">
+                            <img src="meble_protetyczne5_2.jpg" alt="Mebel 5 - Zdjęcie 2">
+                            <img src="meble_protetyczne5_3.jpg" alt="Mebel 5 - Zdjęcie 3">
+                        </div>
+                        <div class="modal-right">
+                            <h3>Biurko ANS - trzystanowiskowe</h3>
+                            <p><strong>Opis:</strong> Biurko trzystanowiskowe, zaprojektowane z myślą o wygodzie pracy. Instalacja elektryczna (3x3 gniazda), powietrzna (dmuchawki), mata robocza, prowadnice szuflad z cichym domykiem. Opcje: gaz, kobylka, lampa, zmiana koloru.</p>
+                            <p><strong>Cena netto:</strong> 11500 PLN</p>
+                            <p><strong>Wielkość:</strong> Brak informacji</p>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Mebel 6 -->
                 <div class="furniture-item">
-                    <img src="meble_protetyczne6.jpg" alt="Mebel 5" class="furniture-img" onclick="openModal('modal6')">
+                    <img src="meble_protetyczne6.jpg" alt="Mebel 6" class="furniture-img" onclick="openModal('modal6')">
                     <h3>Biurko ANS - jednostanowiskowe</h3>
-                    <p><strong>Opis:</strong>Biurko jednostanowiskowe to funkcjonalne rozwiązanie, zaprojektowane z myślą o wygodzie pracy. Wyposażone jest w instalację elektryczną z trzema zestawami po trzy gniazda umieszczonymi pod blatem oraz instalację powietrzną z dmuchawkami. Posiada matę roboczą i prowadnice szuflad z mechanizmem cichego domyku. W ramach opcji dodatkowych dostępne są instalacja gazowa, kobylka (podpórka), lampa oraz możliwość zmiany koloru mebla.</p>
+                    <p><strong>Opis:</strong> Biurko z instalacją elektryczną (3x3 gniazda), powietrzną (dmuchawki), matą roboczą, prowadnicami cichego domyku. Opcje: gaz, kobylka, lampa, zmiana koloru.</p>
                     <p><strong>Cena netto:</strong> 2900 PLN</p>
-                    <p><strong>Wielkość:</strong> 120x60x89 cm </p>
+                    <p><strong>Wielkość:</strong> 120x60x89 cm</p>
                 </div>
                 <div id="modal6" class="modal">
                     <span class="close" onclick="closeModal('modal6')">&times;</span>
                     <div class="modal-content">
-                        <img src="meble_protetyczne6_1.jpg" alt="Mebel 6 - Zdjęcie 1">
+                        <div class="modal-left">
+                            <img src="meble_protetyczne6_1.jpg" alt="Mebel 6 - Zdjęcie 1">
+                        </div>
+                        <div class="modal-right">
+                            <h3>Biurko ANS - jednostanowiskowe</h3>
+                            <p><strong>Opis:</strong> Biurko jednostanowiskowe z instalacją elektryczną (3x3 gniazda), powietrzną (dmuchawki), matą roboczą i prowadnicami szuflad z cichym domykiem. Opcje: gaz, kobylka, lampa, zmiana koloru.</p>
+                            <p><strong>Cena netto:</strong> 2900 PLN</p>
+                            <p><strong>Wielkość:</strong> 120x60x89 cm</p>
+                        </div>
                     </div>
                 </div>
-                    <div class="furniture-item">
-                    <img src="meble_protetyczne7.jpg" alt="Mebel 5" class="furniture-img" onclick="openModal('modal7')">
+
+                <!-- Mebel 7 -->
+                <div class="furniture-item">
+                    <img src="meble_protetyczne7.jpg" alt="Mebel 7" class="furniture-img" onclick="openModal('modal7')">
                     <h3>Biurko Wielostanowiskowe</h3>
-                    <p><strong>Opis:</strong>Biurko wielostanowiskowe to funkcjonalne rozwiązanie, idealne do pracy w zespole. Wyposażone jest w instalację elektryczną z trzema gniazdami umieszczonymi pod blatem, matę roboczą oraz prowadnice szuflad z cichym domykiem. Wśród opcji dodatkowych znajdują się lampa, kobylka (podpórka), wyciąg pyłu oraz możliwość zmiany koloru mebla.</p>
+                    <p><strong>Opis:</strong> Wielostanowiskowe, instalacja elektryczna (3 gniazda), mata robocza, prowadnice cichego domyku. Opcje: lampa, kobylka, wyciąg pyłu, zmiana koloru.</p>
                     <p><strong>Cena netto:</strong> 14500 PLN</p>
-                    <p><strong>Wielkość:</strong> 245x125x89 cm </p>
+                    <p><strong>Wielkość:</strong> 245x125x89 cm</p>
                 </div>
                 <div id="modal7" class="modal">
                     <span class="close" onclick="closeModal('modal7')">&times;</span>
                     <div class="modal-content">
-                        <img src="meble_protetyczne7.jpg" alt="Mebel 6 - Zdjęcie 1">
+                        <div class="modal-left">
+                            <img src="meble_protetyczne7.jpg" alt="Mebel 7 - Zdjęcie 1">
+                        </div>
+                        <div class="modal-right">
+                            <h3>Biurko Wielostanowiskowe</h3>
+                            <p><strong>Opis:</strong> Biurko wielostanowiskowe z instalacją elektryczną (3 gniazda), matą roboczą oraz prowadnicami z cichym domykiem. Opcje dodatkowe: lampa, kobylka, wyciąg pyłu, zmiana koloru.</p>
+                            <p><strong>Cena netto:</strong> 14500 PLN</p>
+                            <p><strong>Wielkość:</strong> 245x125x89 cm</p>
+                        </div>
                     </div>
                 </div>
-                
-                 <div class="furniture-item">
-                    <img src="meble_protetyczne8.jpg" alt="Mebel 5" class="furniture-img" onclick="openModal('modal8')">
+
+                <!-- Mebel 8 -->
+                <div class="furniture-item">
+                    <img src="meble_protetyczne8.jpg" alt="Mebel 8" class="furniture-img" onclick="openModal('modal8')">
                     <h3>Blok wielostanowiskowy</h3>
-                    <p><strong>Opis:</strong>Biurko blok wielostanowiskowy to solidne rozwiązanie, zapewniające wygodę pracy na wielu stanowiskach. Wyposażone jest w instalację elektryczną z trzema gniazdami na każde stanowisko, instalację powietrzną z dmuchawką, matę roboczą oraz prowadnice szuflad z mechanizmem cichego domyku. Dodatkowo dostępne są opcje takie jak instalacja gazowa, kobyłka (podpórka), lampa, wyciąg pyłu oraz możliwość zmiany koloru mebla.</p>
+                    <p><strong>Opis:</strong> Biurko blok wielostanowiskowy z instalacją elektryczną (3 gniazda / stanowisko), powietrzną (dmuchawka), matą roboczą i prowadnicami cichego domyku. Opcje: gaz, kobylka, lampa, wyciąg pyłu, zmiana koloru.</p>
                     <p><strong>Cena netto:</strong> 3000 PLN</p>
-                    <p><strong>Wielkość:</strong> 310x120x89 cm </p>
+                    <p><strong>Wielkość:</strong> 310x120x89 cm</p>
                 </div>
                 <div id="modal8" class="modal">
                     <span class="close" onclick="closeModal('modal8')">&times;</span>
                     <div class="modal-content">
-                        <img src="meble_protetyczne8.jpg" alt="Mebel 6 - Zdjęcie 1">
-                        <img src="meble_protetyczne8_2.jpg" alt="Mebel 6 - Zdjęcie 1">
+                        <div class="modal-left">
+                            <img src="meble_protetyczne8.jpg" alt="Mebel 8 - Zdjęcie 1">
+                            <img src="meble_protetyczne8_2.jpg" alt="Mebel 8 - Zdjęcie 2">
+                        </div>
+                        <div class="modal-right">
+                            <h3>Blok wielostanowiskowy</h3>
+                            <p><strong>Opis:</strong> Biurko blok wielostanowiskowy z instalacją elektryczną (3 gniazda na każde stanowisko), powietrzną (dmuchawka), matą roboczą i prowadnicami z cichym domykiem. Opcje: gaz, kobylka, lampa, wyciąg pyłu, zmiana koloru.</p>
+                            <p><strong>Cena netto:</strong> 3000 PLN</p>
+                            <p><strong>Wielkość:</strong> 310x120x89 cm</p>
+                        </div>
                     </div>
                 </div>
-                 <div class="furniture-item">
-                    <img src="meble_protetyczne9.jpg" alt="Mebel 5" class="furniture-img" onclick="openModal('modal9')">
+
+                <!-- Mebel 9 -->
+                <div class="furniture-item">
+                    <img src="meble_protetyczne9.jpg" alt="Mebel 9" class="furniture-img" onclick="openModal('modal9')">
                     <h3>Blok czterostanowiskowy</h3>
-                    <p><strong>Opis:</strong>Biurko jednostanowiskowe to praktyczne rozwiązanie, oferujące komfortowe miejsce pracy. Wyposażone jest w instalację elektryczną z trzema gniazdami umieszczonymi pod blatem oraz prowadnice szuflad z mechanizmem cichego domyku. Dodatkowo dostępne są opcje takie jak lampa oraz możliwość zmiany koloru mebla.</p>
+                    <p><strong>Opis:</strong> Biurko jednostanowiskowe z instalacją elektryczną (3 gniazda), prowadnice szuflad z cichym domykiem. Opcje: lampa, zmiana koloru.</p>
                     <p><strong>Cena netto:</strong> 12500 PLN</p>
-                    <p><strong>Wielkość:</strong> 165x165x89 cm </p>
+                    <p><strong>Wielkość:</strong> 165x165x89 cm</p>
                 </div>
                 <div id="modal9" class="modal">
                     <span class="close" onclick="closeModal('modal9')">&times;</span>
                     <div class="modal-content">
-                        <img src="meble_protetyczne9_1.jpg" alt="Mebel 6 - Zdjęcie 1">
-                        <img src="meble_protetyczne9_3.jpg" alt="Mebel 6 - Zdjęcie 1">
-                        <img src="meble_protetyczne9_3.jpg" alt="Mebel 6 - Zdjęcie 1">
+                        <div class="modal-left">
+                            <img src="meble_protetyczne9_1.jpg" alt="Mebel 9 - Zdjęcie 1">
+                            <img src="meble_protetyczne9_3.jpg" alt="Mebel 9 - Zdjęcie 2">
+                            <img src="meble_protetyczne9_3.jpg" alt="Mebel 9 - Zdjęcie 3">
+                        </div>
+                        <div class="modal-right">
+                            <h3>Blok czterostanowiskowy</h3>
+                            <p><strong>Opis:</strong> Biurko jednostanowiskowe (wersja czterostanowiskowa) z instalacją elektryczną (3 gniazda), prowadnicami szuflad z cichym domykiem. Opcje: lampa, zmiana koloru.</p>
+                            <p><strong>Cena netto:</strong> 12500 PLN</p>
+                            <p><strong>Wielkość:</strong> 165x165x89 cm</p>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Mebel 10 -->
                 <div class="furniture-item">
-                    <img src="meble_protetyczne10.jpg" alt="Mebel 5" class="furniture-img" onclick="openModal('modal10')">
+                    <img src="meble_protetyczne10.jpg" alt="Mebel 10" class="furniture-img" onclick="openModal('modal10')">
                     <h3>Blok czterostanowiskowy pod wyciąg KAVO</h3>
-                    <p><strong>Opis:</strong>Biurko blok czterostanowiskowe zaprojektowane pod wyciąg KAVO o wymiarach 165 cm x 165 cm x 89 cm to profesjonalne rozwiązanie zapewniające ergonomię i wygodę pracy. Wyposażone jest w instalację elektryczną z gniazdem pod blatem, instalację powietrzną z dmuchawkami, matę roboczą oraz prowadnice szuflad z cichym domykiem. W opcjach dodatkowych dostępne są instalacja gazowa, lampa, wyciąg pyłu oraz możliwość zmiany koloru mebla, co pozwala na pełne dostosowanie stanowiska do potrzeb użytkownika.</p>
+                    <p><strong>Opis:</strong> Blok czterostanowiskowy (165x165x89 cm) pod wyciąg KAVO. Instalacja elektryczna, powietrzna, mata robocza, szuflady z cichym domykiem. Opcje: gaz, lampa, wyciąg pyłu, zmiana koloru.</p>
                     <p><strong>Cena netto:</strong> 13500 PLN</p>
-                    <p><strong>Wielkość:</strong> 165x165x89 cm </p>
+                    <p><strong>Wielkość:</strong> 165x165x89 cm</p>
                 </div>
                 <div id="modal10" class="modal">
                     <span class="close" onclick="closeModal('modal10')">&times;</span>
                     <div class="modal-content">
-                        <img src="meble_protetyczne10.jpg" alt="Mebel 6 - Zdjęcie 1">
+                        <div class="modal-left">
+                            <img src="meble_protetyczne10.jpg" alt="Mebel 10 - Zdjęcie 1">
+                        </div>
+                        <div class="modal-right">
+                            <h3>Blok czterostanowiskowy pod wyciąg KAVO</h3>
+                            <p><strong>Opis:</strong> Biurko (165x165x89 cm) zaprojektowane pod wyciąg KAVO. Instalacja elektryczna, powietrzna, mata robocza, szuflady z cichym domykiem. Opcje: gaz, lampa, wyciąg pyłu, zmiana koloru.</p>
+                            <p><strong>Cena netto:</strong> 13500 PLN</p>
+                            <p><strong>Wielkość:</strong> 165x165x89 cm</p>
+                        </div>
                     </div>
                 </div>
-                 <div class="furniture-item">
-                    <img src="meble_protetyczne11.jpg" alt="Mebel 5" class="furniture-img" onclick="openModal('modal11')">
+
+                <!-- Mebel 11 -->
+                <div class="furniture-item">
+                    <img src="meble_protetyczne11.jpg" alt="Mebel 11" class="furniture-img" onclick="openModal('modal11')">
                     <h3>Blok czterostanowiskowy</h3>
-                    <p><strong>Opis:</strong>Biurko blok czterostanowiskowe o wymiarach 165 cm x 165 cm x 89 cm to ergonomiczne rozwiązanie, idealne do pracy zespołowej. Wyposażone jest w instalację elektryczną pod blatem, instalację powietrzną z dmuchawkami, matę roboczą oraz prowadnice szuflad z cichym domykiem. W opcjach dodatkowych dostępne są instalacja gazowa, kobyłka (podpórka), lampa, wyciąg pyłu oraz możliwość zmiany koloru, co pozwala na dostosowanie biurka do indywidualnych potrzeb.</p>
+                    <p><strong>Opis:</strong> Czterostanowiskowe (165x165x89 cm) z instalacją elektryczną, powietrzną, matą roboczą, cichym domykiem. Opcje: gaz, kobyłka, lampa, wyciąg pyłu, zmiana koloru.</p>
                     <p><strong>Cena netto:</strong> 13500 PLN</p>
-                    <p><strong>Wielkość:</strong> 165x165x89 cm </p>
+                    <p><strong>Wielkość:</strong> 165x165x89 cm</p>
                 </div>
                 <div id="modal11" class="modal">
                     <span class="close" onclick="closeModal('modal11')">&times;</span>
                     <div class="modal-content">
-                        <img src="meble_protetyczne11.jpg" alt="Mebel 6 - Zdjęcie 1">
-                        <img src="meble_protetyczne11_2.jpg" alt="Mebel 6 - Zdjęcie 1">
+                        <div class="modal-left">
+                            <img src="meble_protetyczne11.jpg" alt="Mebel 11 - Zdjęcie 1">
+                            <img src="meble_protetyczne11_2.jpg" alt="Mebel 11 - Zdjęcie 2">
+                        </div>
+                        <div class="modal-right">
+                            <h3>Blok czterostanowiskowy</h3>
+                            <p><strong>Opis:</strong> Biurko czterostanowiskowe (165x165x89 cm) z instalacją elektryczną, powietrzną, matą roboczą oraz szufladami z cichym domykiem. Opcje: gaz, kobyłka, lampa, wyciąg pyłu, zmiana koloru.</p>
+                            <p><strong>Cena netto:</strong> 13500 PLN</p>
+                            <p><strong>Wielkość:</strong> 165x165x89 cm</p>
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </section>
     </main>
