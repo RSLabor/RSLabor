@@ -173,3 +173,47 @@ footer {
     background: #333;
     color: #fff;
 }
+
+/* Responsywność */
+@media (max-width: 768px) {
+    /* Nagłówek */
+    header {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    /* Sekcja Hero */
+    .hero {
+        padding: 80px 10px;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .cta-button {
+        padding: 10px 20px;
+    }
+    
+    /* Sekcja Funkcje */
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    /* Sekcja Usługi (Tabs) */
+    .tabs-container {
+        flex-direction: column;
+    }
+}
