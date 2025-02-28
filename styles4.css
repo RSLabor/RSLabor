@@ -52,7 +52,10 @@ header {
 .furniture {
     padding: 50px 20px;
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
 .furniture h2 {
     font-size: 2em;
     margin-bottom: 30px;
